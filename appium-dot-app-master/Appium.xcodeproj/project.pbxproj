@@ -1,0 +1,1322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360BD91516F12B03000D3BEB /* AppiumInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 360BD91416F12B03000D3BEB /* AppiumInspector.m */; };
+		3612E5F816E5B6520050CF0A /* appium.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 3612E5F716E5B6520050CF0A /* appium.sdef */; };
+		3612E5FC16E5B69C0050CF0A /* NSApplication+AppleScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612E5FB16E5B69C0050CF0A /* NSApplication+AppleScript.m */; };
+		362B5B651713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 362B5B641713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.m */; };
+		364EED3B191EDE6F00AB4439 /* dev-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED3A191EDE6F00AB4439 /* dev-settings.png */; };
+		364EED47191EDF6C00AB4439 /* android.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED46191EDF6C00AB4439 /* android.png */; };
+		364EED49191EDF9100AB4439 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED48191EDF9100AB4439 /* apple.png */; };
+		364EED4F191EDFFF00AB4439 /* inspector.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED4E191EDFFF00AB4439 /* inspector.png */; };
+		364EED53191EE04A00AB4439 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED52191EE04A00AB4439 /* settings.png */; };
+		364EED55191EE07000AB4439 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED54191EE07000AB4439 /* trash.png */; };
+		364EED59191EE27000AB4439 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 364EED58191EE27000AB4439 /* robot.png */; };
+		3652B34416E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3652B34316E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.m */; };
+		36580CB217A4543A004C2D94 /* NSString+TrimLeadingWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = 36580CB117A4543A004C2D94 /* NSString+TrimLeadingWhitespace.m */; };
+		365A2D7E16E3C847007BADF9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A2D7D16E3C847007BADF9 /* Utility.m */; };
+		365A2D8416E3DF48007BADF9 /* ANSIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A2D8316E3DF48007BADF9 /* ANSIUtility.m */; };
+		365A2D8716E3E67B007BADF9 /* NodeInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A2D8616E3E67B007BADF9 /* NodeInstance.m */; };
+		365CA3C316EFDA8300A6DBE8 /* AppiumPortTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CA3C216EFDA8300A6DBE8 /* AppiumPortTransformer.m */; };
+		3661735617172AB200E786DF /* AppiumCodeMakerPythonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3661735517172AB200E786DF /* AppiumCodeMakerPythonPlugin.m */; };
+		36683065184A5DB500C1A91D /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683052184A5DB500C1A91D /* SBJsonParser.m */; };
+		36683066184A5DB500C1A91D /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683054184A5DB500C1A91D /* SBJsonStreamParser.m */; };
+		36683067184A5DB500C1A91D /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683056184A5DB500C1A91D /* SBJsonStreamParserAccumulator.m */; };
+		36683068184A5DB500C1A91D /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683058184A5DB500C1A91D /* SBJsonStreamParserAdapter.m */; };
+		36683069184A5DB500C1A91D /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3668305A184A5DB500C1A91D /* SBJsonStreamParserState.m */; };
+		3668306A184A5DB500C1A91D /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3668305C184A5DB500C1A91D /* SBJsonStreamTokeniser.m */; };
+		3668306B184A5DB500C1A91D /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3668305E184A5DB500C1A91D /* SBJsonStreamWriter.m */; };
+		3668306C184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683060184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.m */; };
+		3668306D184A5DB500C1A91D /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683062184A5DB500C1A91D /* SBJsonStreamWriterState.m */; };
+		3668306E184A5DB500C1A91D /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683064184A5DB500C1A91D /* SBJsonWriter.m */; };
+		3668307A184A5DC000C1A91D /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683070184A5DC000C1A91D /* SocketIO.m */; };
+		3668307B184A5DC000C1A91D /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683072184A5DC000C1A91D /* SocketIOJSONSerialization.m */; };
+		3668307C184A5DC000C1A91D /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683074184A5DC000C1A91D /* SocketIOPacket.m */; };
+		3668307D184A5DC000C1A91D /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683077184A5DC000C1A91D /* SocketIOTransportWebsocket.m */; };
+		3668307E184A5DC000C1A91D /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683079184A5DC000C1A91D /* SocketIOTransportXHR.m */; };
+		36683084184A5DCE00C1A91D /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683081184A5DCE00C1A91D /* NSData+SRB64Additions.m */; };
+		36683085184A5DCE00C1A91D /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 36683083184A5DCE00C1A91D /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		36683089184A5DF300C1A91D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36683088184A5DF300C1A91D /* Security.framework */; };
+		3668308B184A5E6600C1A91D /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 3668308A184A5E6600C1A91D /* base64.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		366DFB75173D552800B451A6 /* AppiumInspectorWindow+AppleScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 366DFB74173D552800B451A6 /* AppiumInspectorWindow+AppleScript.m */; };
+		368230DA1715C73F00FF113F /* AppiumCodeMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 368230D91715C73F00FF113F /* AppiumCodeMaker.m */; };
+		368DC8521737255A0030F656 /* AppiumCodeMakerActionExecuteScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DC8511737255A0030F656 /* AppiumCodeMakerActionExecuteScript.m */; };
+		369126DD1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 369126DC1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.m */; };
+		36919C8B171616AD00AC2C63 /* AppiumCodeMakerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 36919C8A171616AD00AC2C63 /* AppiumCodeMakerAction.m */; };
+		3695CAB116E3FCAE003697A9 /* AppiumInstallationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3695CAAF16E3FCAE003697A9 /* AppiumInstallationWindow.xib */; };
+		3695E3C316FD08C800AD1544 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3695E3C216FD08C800AD1544 /* QuartzCore.framework */; };
+		36A765A616F01C7C002A7D6A /* appium.icns in Resources */ = {isa = PBXBuildFile; fileRef = 36A765A516F01C7C002A7D6A /* appium.icns */; };
+		36A7C8EC17A485C9007F15AB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A7C8EB17A485C9007F15AB /* ScriptingBridge.framework */; };
+		36A7C8F117A487DC007F15AB /* AppiumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEB7F516E3662E00B5B100 /* AppiumTests.m */; };
+		36A871C8170B980F005BFD15 /* AppiumInspectorScreenshotImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A871C7170B980F005BFD15 /* AppiumInspectorScreenshotImageView.m */; };
+		36AA8D6F16E40B28007472C1 /* AppiumMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AA8D6D16E40B28007472C1 /* AppiumMainWindowController.m */; };
+		36AA8D7016E40B28007472C1 /* AppiumMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AA8D6E16E40B28007472C1 /* AppiumMainWindow.xib */; };
+		36ADA119172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ADA118172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.m */; };
+		36B2F18616E6379C008764E0 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36B2F18516E6379C008764E0 /* defaults.plist */; };
+		36BA17BB16E81BF30041DD86 /* AppiumAppPathTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA17BA16E81BF30041DD86 /* AppiumAppPathTransformer.m */; };
+		36BA3A1D191EE417007FA51B /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BA3A1C191EE417007FA51B /* doctor.png */; };
+		36BBC4CE1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BBC4CD1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.m */; };
+		36BF1D66171B434C00C2CF01 /* AppiumCodeMakerActionTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D65171B434C00C2CF01 /* AppiumCodeMakerActionTap.m */; };
+		36BF1D69171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D68171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.m */; };
+		36BF1D6C171B4ED400C2CF01 /* AppiumCodeMakerAlertDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D6B171B4ED400C2CF01 /* AppiumCodeMakerAlertDismiss.m */; };
+		36BF1D6F171B4F5100C2CF01 /* AppiumCodeMakerActionAlertAccept.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D6E171B4F5000C2CF01 /* AppiumCodeMakerActionAlertAccept.m */; };
+		36BF1D72171B4FE600C2CF01 /* AppiumCodeMakerActionSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D71171B4FE500C2CF01 /* AppiumCodeMakerActionSwipe.m */; };
+		36BF1D75171B540100C2CF01 /* AppiumCodeMakerActionComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF1D74171B540000C2CF01 /* AppiumCodeMakerActionComment.m */; };
+		36BF83771738787E00FF4234 /* AppiumCodeMakerActionShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF83761738787E00FF4234 /* AppiumCodeMakerActionShake.m */; };
+		36C4BDFD171C9D4C004FD4FA /* AppiumCodeMakerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C4BDFC171C9D4C004FD4FA /* AppiumCodeMakerPlugin.m */; };
+		36C9479C1719D0CB008DE83F /* AppiumRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C9479B1719D0CB008DE83F /* AppiumRecorderViewController.m */; };
+		36CD44EE16F0D5C300194193 /* AppiumInspectorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CD44EC16F0D5C300194193 /* AppiumInspectorWindowController.m */; };
+		36CD44EF16F0D5C300194193 /* AppiumInspectorWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CD44ED16F0D5C300194193 /* AppiumInspectorWindow.xib */; };
+		36CD44F616F0E22800194193 /* WebDriverElementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CD44F516F0E22800194193 /* WebDriverElementNode.m */; };
+		36CEB7CC16E3662E00B5B100 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CEB7CB16E3662E00B5B100 /* Cocoa.framework */; };
+		36CEB7D616E3662E00B5B100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36CEB7D416E3662E00B5B100 /* InfoPlist.strings */; };
+		36CEB7D816E3662E00B5B100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CEB7D716E3662E00B5B100 /* main.m */; };
+		36CEB7DC16E3662E00B5B100 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 36CEB7DA16E3662E00B5B100 /* Credits.rtf */; };
+		36CEB7E216E3662E00B5B100 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CEB7E016E3662E00B5B100 /* MainMenu.xib */; };
+		36CEB7EB16E3662E00B5B100 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CEB7CB16E3662E00B5B100 /* Cocoa.framework */; };
+		36CEB7F316E3662E00B5B100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36CEB7F116E3662E00B5B100 /* InfoPlist.strings */; };
+		36D17E2916F144E600DC5797 /* Upgrade.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 36D17E2816F144E600DC5797 /* Upgrade.applescript */; };
+		36D66777191FC8CE0088C110 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D66776191FC8CE0088C110 /* NSObject+Properties.m */; };
+		36F1DE43191FE67300FC65AC /* logTextViewBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F1DE42191FE67300FC65AC /* logTextViewBg.png */; };
+		36FA922C174037FD00699A6B /* AppiumCodeMakerActionScrollTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FA922B174037FD00699A6B /* AppiumCodeMakerActionScrollTo.m */; };
+		36FF07AD171743AC009ED9E2 /* AppiumCodeMakerLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF07AC171743AC009ED9E2 /* AppiumCodeMakerLocator.m */; };
+		36FF07B0171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF07AF171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.m */; };
+		36FF07B317174936009ED9E2 /* AppiumCodeMakerRubyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF07B217174935009ED9E2 /* AppiumCodeMakerRubyPlugin.m */; };
+		36FF20D61900222400008A7D /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF20D51900222400008A7D /* XMLReader.m */; };
+		7D3CB870198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CB86F198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.m */; };
+		7D6B509318F522C400E25292 /* AppiumCodeMakerNodePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B509218F522C400E25292 /* AppiumCodeMakerNodePlugin.m */; };
+		8C2E4A411B5CDDF7005D76FD /* Selenium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2E4A401B5CDDF7005D76FD /* Selenium.framework */; };
+		8C2E4A431B5CDE62005D76FD /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2E4A421B5CDE62005D76FD /* MGSFragaria.framework */; };
+		8C2E4A441B5CDE8F005D76FD /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2E4A421B5CDE62005D76FD /* MGSFragaria.framework */; };
+		8C2E4A451B5CDE8F005D76FD /* MGSFragaria.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C2E4A421B5CDE62005D76FD /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C2E4A461B5CDE8F005D76FD /* Selenium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2E4A401B5CDDF7005D76FD /* Selenium.framework */; };
+		8C2E4A471B5CDE8F005D76FD /* Selenium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C2E4A401B5CDDF7005D76FD /* Selenium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7615F681A6E6E8100557977 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = C7615F671A6E6E8100557977 /* open.png */; };
+		C7615F6E1A6E6E8700557977 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = C7615F6D1A6E6E8700557977 /* save.png */; };
+		C79097471A6AB2BF007621D0 /* AppiumGeneralSettingsPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79097461A6AB2BF007621D0 /* AppiumGeneralSettingsPopOverView.xib */; };
+		C790974C1A6ABF3B007621D0 /* AppiumDeveloperSettingsPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C790974A1A6ABF3B007621D0 /* AppiumDeveloperSettingsPopOverView.xib */; };
+		C79097511A6AC3BE007621D0 /* AppiumiOSSettingsPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C790974F1A6AC3BE007621D0 /* AppiumiOSSettingsPopOverView.xib */; };
+		C79097561A6AD3A4007621D0 /* AppiumAndroidSettingsPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79097541A6AD3A4007621D0 /* AppiumAndroidSettingsPopOverView.xib */; };
+		C79C75611A6BB9650030023D /* AppiumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75601A6BB9650030023D /* AppiumAppDelegate.m */; };
+		C79C75751A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75681A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.m */; };
+		C79C75761A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C756A1A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.m */; };
+		C79C75771A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C756C1A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.m */; };
+		C79C75781A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C756E1A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.m */; };
+		C79C75791A6BBAD10030023D /* AppiumMainWindowPopOverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75701A6BBAD10030023D /* AppiumMainWindowPopOverButton.m */; };
+		C79C757A1A6BBAD10030023D /* AppiumMainWindowPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75721A6BBAD10030023D /* AppiumMainWindowPopOverViewController.m */; };
+		C79C757B1A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75741A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.m */; };
+		C79C758A1A6BBAF00030023D /* AppiumAndroidSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C757D1A6BBAF00030023D /* AppiumAndroidSettingsModel.m */; };
+		C79C758B1A6BBAF00030023D /* AppiumDeveloperSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C757F1A6BBAF00030023D /* AppiumDeveloperSettingsModel.m */; };
+		C79C758C1A6BBAF00030023D /* AppiumGeneralSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75811A6BBAF00030023D /* AppiumGeneralSettingsModel.m */; };
+		C79C758D1A6BBAF00030023D /* AppiumiOSSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75831A6BBAF00030023D /* AppiumiOSSettingsModel.m */; };
+		C79C758E1A6BBAF00030023D /* AppiumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75851A6BBAF00030023D /* AppiumModel.m */; };
+		C79C758F1A6BBAF00030023D /* AppiumRobotSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75871A6BBAF00030023D /* AppiumRobotSettingsModel.m */; };
+		C79C75901A6BBAF00030023D /* AppiumServerArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75891A6BBAF00030023D /* AppiumServerArgument.m */; };
+		C79C75961A6BBB770030023D /* AppiumMenuBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75951A6BBB770030023D /* AppiumMenuBarManager.m */; };
+		C79C759B1A6BBBA30030023D /* AppiumInstallationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C75981A6BBBA30030023D /* AppiumInstallationWindowController.m */; };
+		C79C759C1A6BBBA30030023D /* AppiumUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C759A1A6BBBA30030023D /* AppiumUpdater.m */; };
+		C7A23A3F1A6B1BE7004CA025 /* PreciseTapPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A23A3E1A6B1BE7004CA025 /* PreciseTapPopOverView.xib */; };
+		C7A23A411A6B2225004CA025 /* SwipePopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A23A401A6B2225004CA025 /* SwipePopOverView.xib */; };
+		C7CA57CC1A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CA57C81A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.m */; };
+		C7CA57CD1A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CA57CA1A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.m */; };
+		C7D0D54C1A6A859C00D3D883 /* AppiumRobotSettingsPopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7D0D54A1A6A859C00D3D883 /* AppiumRobotSettingsPopOverView.xib */; };
+		C7E595F61A6C0A5300B951F9 /* NSImage+Rotated.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E595F51A6C0A5300B951F9 /* NSImage+Rotated.m */; };
+		C7FE35671A6B80F900827EAF /* AppiumRecorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FE35661A6B80F900827EAF /* AppiumRecorderView.xib */; };
+		C7FFBA8D19F15CDE005B030F /* menubar-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C7FFBA8C19F15CDE005B030F /* menubar-icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36CEB7EC16E3662E00B5B100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36CEB7C016E3662E00B5B100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36CEB7C716E3662E00B5B100;
+			remoteInfo = Appium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3631DD9216F4E4830087779D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C2E4A471B5CDE8F005D76FD /* Selenium.framework in CopyFiles */,
+				8C2E4A451B5CDE8F005D76FD /* MGSFragaria.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		360BD91316F12B03000D3BEB /* AppiumInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspector.h; sourceTree = "<group>"; };
+		360BD91416F12B03000D3BEB /* AppiumInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspector.m; sourceTree = "<group>"; };
+		3612E5F716E5B6520050CF0A /* appium.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = appium.sdef; sourceTree = "<group>"; };
+		3612E5FA16E5B69C0050CF0A /* NSApplication+AppleScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+AppleScript.h"; sourceTree = "<group>"; };
+		3612E5FB16E5B69C0050CF0A /* NSApplication+AppleScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+AppleScript.m"; sourceTree = "<group>"; };
+		362B5B631713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerCSharpPlugin.h; path = Plugins/AppiumCodeMakerCSharpPlugin.h; sourceTree = "<group>"; };
+		362B5B641713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerCSharpPlugin.m; path = Plugins/AppiumCodeMakerCSharpPlugin.m; sourceTree = "<group>"; };
+		362DF1E4170F4350001CAD1D /* AppiumGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiumGlobals.h; sourceTree = "<group>"; };
+		363236791713B2470088FFBC /* AppiumCodeMakerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerPlugin.h; path = Plugins/AppiumCodeMakerPlugin.h; sourceTree = "<group>"; };
+		364EED3A191EDE6F00AB4439 /* dev-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dev-settings.png"; sourceTree = "<group>"; };
+		364EED46191EDF6C00AB4439 /* android.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android.png; sourceTree = "<group>"; };
+		364EED48191EDF9100AB4439 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		364EED4E191EDFFF00AB4439 /* inspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inspector.png; sourceTree = "<group>"; };
+		364EED52191EE04A00AB4439 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		364EED54191EE07000AB4439 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		364EED58191EE27000AB4439 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot.png; sourceTree = "<group>"; };
+		3652B34216E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumLaunchButtonTextTransformer.h; sourceTree = "<group>"; };
+		3652B34316E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumLaunchButtonTextTransformer.m; sourceTree = "<group>"; };
+		36580CB017A4543A004C2D94 /* NSString+TrimLeadingWhitespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+TrimLeadingWhitespace.h"; path = "Utility/NSString+TrimLeadingWhitespace.h"; sourceTree = "<group>"; };
+		36580CB117A4543A004C2D94 /* NSString+TrimLeadingWhitespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+TrimLeadingWhitespace.m"; path = "Utility/NSString+TrimLeadingWhitespace.m"; sourceTree = "<group>"; };
+		365A2D7C16E3C847007BADF9 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = Utility/Utility.h; sourceTree = "<group>"; };
+		365A2D7D16E3C847007BADF9 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = Utility/Utility.m; sourceTree = "<group>"; };
+		365A2D8216E3DF48007BADF9 /* ANSIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANSIUtility.h; path = Utility/ANSIUtility.h; sourceTree = "<group>"; };
+		365A2D8316E3DF48007BADF9 /* ANSIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANSIUtility.m; path = Utility/ANSIUtility.m; sourceTree = "<group>"; };
+		365A2D8516E3E67B007BADF9 /* NodeInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeInstance.h; path = Utility/NodeInstance.h; sourceTree = "<group>"; };
+		365A2D8616E3E67B007BADF9 /* NodeInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NodeInstance.m; path = Utility/NodeInstance.m; sourceTree = "<group>"; };
+		365CA3C116EFDA8300A6DBE8 /* AppiumPortTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumPortTransformer.h; sourceTree = "<group>"; };
+		365CA3C216EFDA8300A6DBE8 /* AppiumPortTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumPortTransformer.m; sourceTree = "<group>"; };
+		3661735417172AB200E786DF /* AppiumCodeMakerPythonPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerPythonPlugin.h; path = Plugins/AppiumCodeMakerPythonPlugin.h; sourceTree = "<group>"; };
+		3661735517172AB200E786DF /* AppiumCodeMakerPythonPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerPythonPlugin.m; path = Plugins/AppiumCodeMakerPythonPlugin.m; sourceTree = "<group>"; };
+		36683050184A5DB500C1A91D /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = External/SBJson/SBJson.h; sourceTree = "<group>"; };
+		36683051184A5DB500C1A91D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = External/SBJson/SBJsonParser.h; sourceTree = "<group>"; };
+		36683052184A5DB500C1A91D /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = External/SBJson/SBJsonParser.m; sourceTree = "<group>"; };
+		36683053184A5DB500C1A91D /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = External/SBJson/SBJsonStreamParser.h; sourceTree = "<group>"; };
+		36683054184A5DB500C1A91D /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = External/SBJson/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		36683055184A5DB500C1A91D /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = External/SBJson/SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		36683056184A5DB500C1A91D /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = External/SBJson/SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		36683057184A5DB500C1A91D /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = External/SBJson/SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		36683058184A5DB500C1A91D /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = External/SBJson/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		36683059184A5DB500C1A91D /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = External/SBJson/SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		3668305A184A5DB500C1A91D /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = External/SBJson/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		3668305B184A5DB500C1A91D /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamTokeniser.h; path = External/SBJson/SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		3668305C184A5DB500C1A91D /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamTokeniser.m; path = External/SBJson/SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		3668305D184A5DB500C1A91D /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = External/SBJson/SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		3668305E184A5DB500C1A91D /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = External/SBJson/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		3668305F184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = External/SBJson/SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		36683060184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = External/SBJson/SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		36683061184A5DB500C1A91D /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = External/SBJson/SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		36683062184A5DB500C1A91D /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = External/SBJson/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		36683063184A5DB500C1A91D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = External/SBJson/SBJsonWriter.h; sourceTree = "<group>"; };
+		36683064184A5DB500C1A91D /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = External/SBJson/SBJsonWriter.m; sourceTree = "<group>"; };
+		3668306F184A5DC000C1A91D /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = External/SocketIO/SocketIO.h; sourceTree = "<group>"; };
+		36683070184A5DC000C1A91D /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = External/SocketIO/SocketIO.m; sourceTree = "<group>"; };
+		36683071184A5DC000C1A91D /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = External/SocketIO/SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		36683072184A5DC000C1A91D /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = External/SocketIO/SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		36683073184A5DC000C1A91D /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = External/SocketIO/SocketIOPacket.h; sourceTree = "<group>"; };
+		36683074184A5DC000C1A91D /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = External/SocketIO/SocketIOPacket.m; sourceTree = "<group>"; };
+		36683075184A5DC000C1A91D /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = External/SocketIO/SocketIOTransport.h; sourceTree = "<group>"; };
+		36683076184A5DC000C1A91D /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = External/SocketIO/SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		36683077184A5DC000C1A91D /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = External/SocketIO/SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		36683078184A5DC000C1A91D /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = External/SocketIO/SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		36683079184A5DC000C1A91D /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = External/SocketIO/SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		3668307F184A5DCE00C1A91D /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = External/SocketRocket/base64.h; sourceTree = "<group>"; };
+		36683080184A5DCE00C1A91D /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "External/SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		36683081184A5DCE00C1A91D /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "External/SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		36683082184A5DCE00C1A91D /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = External/SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		36683083184A5DCE00C1A91D /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = External/SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		36683088184A5DF300C1A91D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3668308A184A5E6600C1A91D /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = External/SocketRocket/base64.c; sourceTree = "<group>"; };
+		366DFB73173D552800B451A6 /* AppiumInspectorWindow+AppleScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppiumInspectorWindow+AppleScript.h"; sourceTree = "<group>"; };
+		366DFB74173D552800B451A6 /* AppiumInspectorWindow+AppleScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppiumInspectorWindow+AppleScript.m"; sourceTree = "<group>"; };
+		368230D81715C73F00FF113F /* AppiumCodeMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMaker.h; sourceTree = "<group>"; };
+		368230D91715C73F00FF113F /* AppiumCodeMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMaker.m; sourceTree = "<group>"; };
+		368DC850173725590030F656 /* AppiumCodeMakerActionExecuteScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionExecuteScript.h; sourceTree = "<group>"; };
+		368DC8511737255A0030F656 /* AppiumCodeMakerActionExecuteScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionExecuteScript.m; sourceTree = "<group>"; };
+		369126DB1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorRefreshButtonTextTransformer.h; sourceTree = "<group>"; };
+		369126DC1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorRefreshButtonTextTransformer.m; sourceTree = "<group>"; };
+		36919C89171616AD00AC2C63 /* AppiumCodeMakerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerAction.h; sourceTree = "<group>"; };
+		36919C8A171616AD00AC2C63 /* AppiumCodeMakerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerAction.m; sourceTree = "<group>"; };
+		3695CAAF16E3FCAE003697A9 /* AppiumInstallationWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppiumInstallationWindow.xib; path = XIBs/AppiumInstallationWindow.xib; sourceTree = "<group>"; };
+		3695E3C216FD08C800AD1544 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		36A765A516F01C7C002A7D6A /* appium.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = appium.icns; sourceTree = "<group>"; };
+		36A7C8EA17A48466007F15AB /* Appium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appium.h; sourceTree = "<group>"; };
+		36A7C8EB17A485C9007F15AB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		36A7C8ED17A486EA007F15AB /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		36A871C6170B980F005BFD15 /* AppiumInspectorScreenshotImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorScreenshotImageView.h; sourceTree = "<group>"; };
+		36A871C7170B980F005BFD15 /* AppiumInspectorScreenshotImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorScreenshotImageView.m; sourceTree = "<group>"; };
+		36AA8D6C16E40B28007472C1 /* AppiumMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumMainWindowController.h; sourceTree = "<group>"; };
+		36AA8D6D16E40B28007472C1 /* AppiumMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumMainWindowController.m; sourceTree = "<group>"; };
+		36AA8D6E16E40B28007472C1 /* AppiumMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppiumMainWindow.xib; path = XIBs/AppiumMainWindow.xib; sourceTree = "<group>"; };
+		36ADA117172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionPreciseTap.h; sourceTree = "<group>"; };
+		36ADA118172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionPreciseTap.m; sourceTree = "<group>"; };
+		36B2F18516E6379C008764E0 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
+		36BA17B916E81BF30041DD86 /* AppiumAppPathTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumAppPathTransformer.h; sourceTree = "<group>"; };
+		36BA17BA16E81BF30041DD86 /* AppiumAppPathTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumAppPathTransformer.m; sourceTree = "<group>"; };
+		36BA3A1C191EE417007FA51B /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		36BBC4CC1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerObjectiveCPlugin.h; path = Plugins/AppiumCodeMakerObjectiveCPlugin.h; sourceTree = "<group>"; };
+		36BBC4CD1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerObjectiveCPlugin.m; path = Plugins/AppiumCodeMakerObjectiveCPlugin.m; sourceTree = "<group>"; };
+		36BF1D64171B434C00C2CF01 /* AppiumCodeMakerActionTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionTap.h; sourceTree = "<group>"; };
+		36BF1D65171B434C00C2CF01 /* AppiumCodeMakerActionTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionTap.m; sourceTree = "<group>"; };
+		36BF1D67171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionSendKeys.h; sourceTree = "<group>"; };
+		36BF1D68171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionSendKeys.m; sourceTree = "<group>"; };
+		36BF1D6A171B4ED400C2CF01 /* AppiumCodeMakerActionAlertDismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionAlertDismiss.h; sourceTree = "<group>"; };
+		36BF1D6B171B4ED400C2CF01 /* AppiumCodeMakerAlertDismiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerAlertDismiss.m; sourceTree = "<group>"; };
+		36BF1D6D171B4F5000C2CF01 /* AppiumCodeMakerActionAlertAccept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionAlertAccept.h; sourceTree = "<group>"; };
+		36BF1D6E171B4F5000C2CF01 /* AppiumCodeMakerActionAlertAccept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionAlertAccept.m; sourceTree = "<group>"; };
+		36BF1D70171B4FE500C2CF01 /* AppiumCodeMakerActionSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionSwipe.h; sourceTree = "<group>"; };
+		36BF1D71171B4FE500C2CF01 /* AppiumCodeMakerActionSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionSwipe.m; sourceTree = "<group>"; };
+		36BF1D73171B540000C2CF01 /* AppiumCodeMakerActionComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionComment.h; sourceTree = "<group>"; };
+		36BF1D74171B540000C2CF01 /* AppiumCodeMakerActionComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionComment.m; sourceTree = "<group>"; };
+		36BF1D76171B55DE00C2CF01 /* AppiumCodeMakerActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActions.h; sourceTree = "<group>"; };
+		36BF83751738787E00FF4234 /* AppiumCodeMakerActionShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionShake.h; sourceTree = "<group>"; };
+		36BF83761738787E00FF4234 /* AppiumCodeMakerActionShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionShake.m; sourceTree = "<group>"; };
+		36C4BDFC171C9D4C004FD4FA /* AppiumCodeMakerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerPlugin.m; path = Plugins/AppiumCodeMakerPlugin.m; sourceTree = "<group>"; };
+		36C4BDFE171CA5F4004FD4FA /* AppiumCodeMakerPlugins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerPlugins.h; path = Plugins/AppiumCodeMakerPlugins.h; sourceTree = "<group>"; };
+		36C9479A1719D0CB008DE83F /* AppiumRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumRecorderViewController.h; sourceTree = "<group>"; };
+		36C9479B1719D0CB008DE83F /* AppiumRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumRecorderViewController.m; sourceTree = "<group>"; };
+		36CD44EB16F0D5C300194193 /* AppiumInspectorWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorWindowController.h; sourceTree = "<group>"; };
+		36CD44EC16F0D5C300194193 /* AppiumInspectorWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorWindowController.m; sourceTree = "<group>"; };
+		36CD44ED16F0D5C300194193 /* AppiumInspectorWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumInspectorWindow.xib; sourceTree = "<group>"; };
+		36CD44F416F0E22800194193 /* WebDriverElementNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDriverElementNode.h; sourceTree = "<group>"; };
+		36CD44F516F0E22800194193 /* WebDriverElementNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDriverElementNode.m; sourceTree = "<group>"; };
+		36CEB7C816E3662E00B5B100 /* Appium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CEB7CB16E3662E00B5B100 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		36CEB7CE16E3662E00B5B100 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		36CEB7CF16E3662E00B5B100 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		36CEB7D016E3662E00B5B100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36CEB7D316E3662E00B5B100 /* Appium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Appium-Info.plist"; path = "../Appium-Info.plist"; sourceTree = "<group>"; };
+		36CEB7D516E3662E00B5B100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36CEB7D716E3662E00B5B100 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36CEB7D916E3662E00B5B100 /* Appium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Appium-Prefix.pch"; path = "../Appium-Prefix.pch"; sourceTree = "<group>"; };
+		36CEB7DB16E3662E00B5B100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		36CEB7E116E3662E00B5B100 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		36CEB7E816E3662E00B5B100 /* AppiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CEB7F016E3662E00B5B100 /* AppiumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppiumTests-Info.plist"; sourceTree = "<group>"; };
+		36CEB7F216E3662E00B5B100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36CEB7F416E3662E00B5B100 /* AppiumTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiumTests.h; sourceTree = "<group>"; };
+		36CEB7F516E3662E00B5B100 /* AppiumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppiumTests.m; sourceTree = "<group>"; };
+		36D17E2816F144E600DC5797 /* Upgrade.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = Upgrade.applescript; sourceTree = "<group>"; };
+		36D66775191FC8CE0088C110 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Properties.h"; path = "Utility/NSObject+Properties.h"; sourceTree = "<group>"; };
+		36D66776191FC8CE0088C110 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Properties.m"; path = "Utility/NSObject+Properties.m"; sourceTree = "<group>"; };
+		36F1DE42191FE67300FC65AC /* logTextViewBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logTextViewBg.png; sourceTree = "<group>"; };
+		36FA922A174037FD00699A6B /* AppiumCodeMakerActionScrollTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerActionScrollTo.h; sourceTree = "<group>"; };
+		36FA922B174037FD00699A6B /* AppiumCodeMakerActionScrollTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerActionScrollTo.m; sourceTree = "<group>"; };
+		36FF07AB171743AC009ED9E2 /* AppiumCodeMakerLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumCodeMakerLocator.h; sourceTree = "<group>"; };
+		36FF07AC171743AC009ED9E2 /* AppiumCodeMakerLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumCodeMakerLocator.m; sourceTree = "<group>"; };
+		36FF07AE171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerJavaPlugin.h; path = Plugins/AppiumCodeMakerJavaPlugin.h; sourceTree = "<group>"; };
+		36FF07AF171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerJavaPlugin.m; path = Plugins/AppiumCodeMakerJavaPlugin.m; sourceTree = "<group>"; };
+		36FF07B117174935009ED9E2 /* AppiumCodeMakerRubyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerRubyPlugin.h; path = Plugins/AppiumCodeMakerRubyPlugin.h; sourceTree = "<group>"; };
+		36FF07B217174935009ED9E2 /* AppiumCodeMakerRubyPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerRubyPlugin.m; path = Plugins/AppiumCodeMakerRubyPlugin.m; sourceTree = "<group>"; };
+		36FF20D41900222400008A7D /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLReader.h; path = Utility/XMLReader.h; sourceTree = "<group>"; };
+		36FF20D51900222400008A7D /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLReader.m; path = Utility/XMLReader.m; sourceTree = "<group>"; };
+		7D3CB86E198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorButtonImageTransformer.h; sourceTree = "<group>"; };
+		7D3CB86F198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorButtonImageTransformer.m; sourceTree = "<group>"; };
+		7D6B509118F522C400E25292 /* AppiumCodeMakerNodePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumCodeMakerNodePlugin.h; path = Plugins/AppiumCodeMakerNodePlugin.h; sourceTree = "<group>"; };
+		7D6B509218F522C400E25292 /* AppiumCodeMakerNodePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumCodeMakerNodePlugin.m; path = Plugins/AppiumCodeMakerNodePlugin.m; sourceTree = "<group>"; };
+		8C2E4A401B5CDDF7005D76FD /* Selenium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Selenium.framework; path = "../selenium-objective-c-master/Selenium/build/Debug/Selenium.framework"; sourceTree = "<group>"; };
+		8C2E4A421B5CDE62005D76FD /* MGSFragaria.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSFragaria.framework; path = Frameworks/MGSFragaria.framework; sourceTree = "<group>"; };
+		C7615F671A6E6E8100557977 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		C7615F6D1A6E6E8700557977 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		C79097461A6AB2BF007621D0 /* AppiumGeneralSettingsPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumGeneralSettingsPopOverView.xib; sourceTree = "<group>"; };
+		C790974A1A6ABF3B007621D0 /* AppiumDeveloperSettingsPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumDeveloperSettingsPopOverView.xib; sourceTree = "<group>"; };
+		C790974F1A6AC3BE007621D0 /* AppiumiOSSettingsPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumiOSSettingsPopOverView.xib; sourceTree = "<group>"; };
+		C79097541A6AD3A4007621D0 /* AppiumAndroidSettingsPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumAndroidSettingsPopOverView.xib; sourceTree = "<group>"; };
+		C79C755E1A6BB9010030023D /* AppiumPreferencesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumPreferencesFile.h; sourceTree = "<group>"; };
+		C79C755F1A6BB9650030023D /* AppiumAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumAppDelegate.h; sourceTree = "<group>"; };
+		C79C75601A6BB9650030023D /* AppiumAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumAppDelegate.m; sourceTree = "<group>"; };
+		C79C75671A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumAndroidSettingsPopOverViewController.h; sourceTree = "<group>"; };
+		C79C75681A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumAndroidSettingsPopOverViewController.m; sourceTree = "<group>"; };
+		C79C75691A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumDeveloperSettingsPopOverViewController.h; sourceTree = "<group>"; };
+		C79C756A1A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumDeveloperSettingsPopOverViewController.m; sourceTree = "<group>"; };
+		C79C756B1A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumGeneralSettingsPopOverViewController.h; sourceTree = "<group>"; };
+		C79C756C1A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumGeneralSettingsPopOverViewController.m; sourceTree = "<group>"; };
+		C79C756D1A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumiOSSettingsPopOverViewController.h; sourceTree = "<group>"; };
+		C79C756E1A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumiOSSettingsPopOverViewController.m; sourceTree = "<group>"; };
+		C79C756F1A6BBAD10030023D /* AppiumMainWindowPopOverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumMainWindowPopOverButton.h; sourceTree = "<group>"; };
+		C79C75701A6BBAD10030023D /* AppiumMainWindowPopOverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumMainWindowPopOverButton.m; sourceTree = "<group>"; };
+		C79C75711A6BBAD10030023D /* AppiumMainWindowPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumMainWindowPopOverViewController.h; sourceTree = "<group>"; };
+		C79C75721A6BBAD10030023D /* AppiumMainWindowPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumMainWindowPopOverViewController.m; sourceTree = "<group>"; };
+		C79C75731A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumRobotSettingsPopOverViewController.h; sourceTree = "<group>"; };
+		C79C75741A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumRobotSettingsPopOverViewController.m; sourceTree = "<group>"; };
+		C79C757C1A6BBAF00030023D /* AppiumAndroidSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumAndroidSettingsModel.h; path = Appium/Model/AppiumAndroidSettingsModel.h; sourceTree = SOURCE_ROOT; };
+		C79C757D1A6BBAF00030023D /* AppiumAndroidSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumAndroidSettingsModel.m; path = Appium/Model/AppiumAndroidSettingsModel.m; sourceTree = SOURCE_ROOT; };
+		C79C757E1A6BBAF00030023D /* AppiumDeveloperSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumDeveloperSettingsModel.h; path = Appium/Model/AppiumDeveloperSettingsModel.h; sourceTree = SOURCE_ROOT; };
+		C79C757F1A6BBAF00030023D /* AppiumDeveloperSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumDeveloperSettingsModel.m; path = Appium/Model/AppiumDeveloperSettingsModel.m; sourceTree = SOURCE_ROOT; };
+		C79C75801A6BBAF00030023D /* AppiumGeneralSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumGeneralSettingsModel.h; path = Appium/Model/AppiumGeneralSettingsModel.h; sourceTree = SOURCE_ROOT; };
+		C79C75811A6BBAF00030023D /* AppiumGeneralSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumGeneralSettingsModel.m; path = Appium/Model/AppiumGeneralSettingsModel.m; sourceTree = SOURCE_ROOT; };
+		C79C75821A6BBAF00030023D /* AppiumiOSSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumiOSSettingsModel.h; path = Appium/Model/AppiumiOSSettingsModel.h; sourceTree = SOURCE_ROOT; };
+		C79C75831A6BBAF00030023D /* AppiumiOSSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumiOSSettingsModel.m; path = Appium/Model/AppiumiOSSettingsModel.m; sourceTree = SOURCE_ROOT; };
+		C79C75841A6BBAF00030023D /* AppiumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumModel.h; path = Appium/Model/AppiumModel.h; sourceTree = SOURCE_ROOT; };
+		C79C75851A6BBAF00030023D /* AppiumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumModel.m; path = Appium/Model/AppiumModel.m; sourceTree = SOURCE_ROOT; };
+		C79C75861A6BBAF00030023D /* AppiumRobotSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumRobotSettingsModel.h; path = Appium/Model/AppiumRobotSettingsModel.h; sourceTree = SOURCE_ROOT; };
+		C79C75871A6BBAF00030023D /* AppiumRobotSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumRobotSettingsModel.m; path = Appium/Model/AppiumRobotSettingsModel.m; sourceTree = SOURCE_ROOT; };
+		C79C75881A6BBAF00030023D /* AppiumServerArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumServerArgument.h; path = Appium/Model/AppiumServerArgument.h; sourceTree = SOURCE_ROOT; };
+		C79C75891A6BBAF00030023D /* AppiumServerArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumServerArgument.m; path = Appium/Model/AppiumServerArgument.m; sourceTree = SOURCE_ROOT; };
+		C79C75941A6BBB770030023D /* AppiumMenuBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumMenuBarManager.h; path = Appium/MenuBar/AppiumMenuBarManager.h; sourceTree = SOURCE_ROOT; };
+		C79C75951A6BBB770030023D /* AppiumMenuBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumMenuBarManager.m; path = Appium/MenuBar/AppiumMenuBarManager.m; sourceTree = SOURCE_ROOT; };
+		C79C75971A6BBBA30030023D /* AppiumInstallationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumInstallationWindowController.h; path = Appium/AutoUpdate/AppiumInstallationWindowController.h; sourceTree = SOURCE_ROOT; };
+		C79C75981A6BBBA30030023D /* AppiumInstallationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumInstallationWindowController.m; path = Appium/AutoUpdate/AppiumInstallationWindowController.m; sourceTree = SOURCE_ROOT; };
+		C79C75991A6BBBA30030023D /* AppiumUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppiumUpdater.h; path = Appium/AutoUpdate/AppiumUpdater.h; sourceTree = SOURCE_ROOT; };
+		C79C759A1A6BBBA30030023D /* AppiumUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppiumUpdater.m; path = Appium/AutoUpdate/AppiumUpdater.m; sourceTree = SOURCE_ROOT; };
+		C7A23A3E1A6B1BE7004CA025 /* PreciseTapPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreciseTapPopOverView.xib; sourceTree = "<group>"; };
+		C7A23A401A6B2225004CA025 /* SwipePopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipePopOverView.xib; sourceTree = "<group>"; };
+		C7CA57C71A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorPreciseTapPopoverViewController.h; sourceTree = "<group>"; };
+		C7CA57C81A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorPreciseTapPopoverViewController.m; sourceTree = "<group>"; };
+		C7CA57C91A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiumInspectorSwipePopOverViewController.h; sourceTree = "<group>"; };
+		C7CA57CA1A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppiumInspectorSwipePopOverViewController.m; sourceTree = "<group>"; };
+		C7D0D54A1A6A859C00D3D883 /* AppiumRobotSettingsPopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumRobotSettingsPopOverView.xib; sourceTree = "<group>"; };
+		C7E595F41A6C0A5300B951F9 /* NSImage+Rotated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+Rotated.h"; path = "Utility/NSImage+Rotated.h"; sourceTree = "<group>"; };
+		C7E595F51A6C0A5300B951F9 /* NSImage+Rotated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Rotated.m"; path = "Utility/NSImage+Rotated.m"; sourceTree = "<group>"; };
+		C7FE35661A6B80F900827EAF /* AppiumRecorderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppiumRecorderView.xib; sourceTree = "<group>"; };
+		C7FFBA8C19F15CDE005B030F /* menubar-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menubar-icon.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36CEB7C516E3662E00B5B100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2E4A461B5CDE8F005D76FD /* Selenium.framework in Frameworks */,
+				8C2E4A431B5CDE62005D76FD /* MGSFragaria.framework in Frameworks */,
+				8C2E4A441B5CDE8F005D76FD /* MGSFragaria.framework in Frameworks */,
+				8C2E4A411B5CDDF7005D76FD /* Selenium.framework in Frameworks */,
+				36683089184A5DF300C1A91D /* Security.framework in Frameworks */,
+				3695E3C316FD08C800AD1544 /* QuartzCore.framework in Frameworks */,
+				36CEB7CC16E3662E00B5B100 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CEB7E416E3662E00B5B100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A7C8EC17A485C9007F15AB /* ScriptingBridge.framework in Frameworks */,
+				36CEB7EB16E3662E00B5B100 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3612E5F916E5B6820050CF0A /* AppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				3612E5F716E5B6520050CF0A /* appium.sdef */,
+				366DFB73173D552800B451A6 /* AppiumInspectorWindow+AppleScript.h */,
+				366DFB74173D552800B451A6 /* AppiumInspectorWindow+AppleScript.m */,
+				3612E5FA16E5B69C0050CF0A /* NSApplication+AppleScript.h */,
+				3612E5FB16E5B69C0050CF0A /* NSApplication+AppleScript.m */,
+				36D17E2816F144E600DC5797 /* Upgrade.applescript */,
+			);
+			path = AppleScript;
+			sourceTree = "<group>";
+		};
+		3614B16D1719F35400A72D99 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				36B90186190721F000AE40E8 /* PopOvers */,
+				36AA8D6C16E40B28007472C1 /* AppiumMainWindowController.h */,
+				36AA8D6D16E40B28007472C1 /* AppiumMainWindowController.m */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		3614B16E1719F3AC00A72D99 /* AutoUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				C79C75971A6BBBA30030023D /* AppiumInstallationWindowController.h */,
+				C79C75981A6BBBA30030023D /* AppiumInstallationWindowController.m */,
+				C79C75991A6BBBA30030023D /* AppiumUpdater.h */,
+				C79C759A1A6BBBA30030023D /* AppiumUpdater.m */,
+			);
+			name = AutoUpdate;
+			path = Server/Update;
+			sourceTree = "<group>";
+		};
+		3614B16F1719F3F400A72D99 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				C79C75941A6BBB770030023D /* AppiumMenuBarManager.h */,
+				C79C75951A6BBB770030023D /* AppiumMenuBarManager.m */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		3614B1701719F43700A72D99 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				C79097451A6AB1D9007621D0 /* Inspector */,
+				C7D0D53E1A6A84DF00D3D883 /* Settings PopOvers */,
+				3695CAAF16E3FCAE003697A9 /* AppiumInstallationWindow.xib */,
+				36AA8D6E16E40B28007472C1 /* AppiumMainWindow.xib */,
+				36CEB7E016E3662E00B5B100 /* MainMenu.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		3614B1711719F46200A72D99 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3652B34116E4285900BDE3E4 /* NSValueTransformers */,
+				3695CAB316E3FFCD003697A9 /* Utility */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		3614B1721719F4C400A72D99 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				363236781713B1EA0088FFBC /* CodeMaker */,
+				36C9479A1719D0CB008DE83F /* AppiumRecorderViewController.h */,
+				36C9479B1719D0CB008DE83F /* AppiumRecorderViewController.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		3618718A1718879A0021D7F7 /* PopOvers */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA57C71A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.h */,
+				C7CA57C81A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.m */,
+				C7CA57C91A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.h */,
+				C7CA57CA1A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.m */,
+			);
+			path = PopOvers;
+			sourceTree = "<group>";
+		};
+		363236781713B1EA0088FFBC /* CodeMaker */ = {
+			isa = PBXGroup;
+			children = (
+				36BF1D63171B432E00C2CF01 /* Actions */,
+				368230D71715C72100FF113F /* Plugins */,
+				368230D81715C73F00FF113F /* AppiumCodeMaker.h */,
+				368230D91715C73F00FF113F /* AppiumCodeMaker.m */,
+				36FF07AB171743AC009ED9E2 /* AppiumCodeMakerLocator.h */,
+				36FF07AC171743AC009ED9E2 /* AppiumCodeMakerLocator.m */,
+			);
+			path = CodeMaker;
+			sourceTree = "<group>";
+		};
+		364EED37191EDDB300AB4439 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFBA8C19F15CDE005B030F /* menubar-icon.png */,
+				364EED46191EDF6C00AB4439 /* android.png */,
+				364EED48191EDF9100AB4439 /* apple.png */,
+				364EED3A191EDE6F00AB4439 /* dev-settings.png */,
+				36BA3A1C191EE417007FA51B /* doctor.png */,
+				364EED4E191EDFFF00AB4439 /* inspector.png */,
+				C7615F671A6E6E8100557977 /* open.png */,
+				364EED58191EE27000AB4439 /* robot.png */,
+				C7615F6D1A6E6E8700557977 /* save.png */,
+				364EED52191EE04A00AB4439 /* settings.png */,
+				364EED54191EE07000AB4439 /* trash.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		3652B34116E4285900BDE3E4 /* NSValueTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				36BA17B916E81BF30041DD86 /* AppiumAppPathTransformer.h */,
+				36BA17BA16E81BF30041DD86 /* AppiumAppPathTransformer.m */,
+				7D3CB86E198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.h */,
+				7D3CB86F198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.m */,
+				369126DB1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.h */,
+				369126DC1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.m */,
+				3652B34216E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.h */,
+				3652B34316E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.m */,
+				365CA3C116EFDA8300A6DBE8 /* AppiumPortTransformer.h */,
+				365CA3C216EFDA8300A6DBE8 /* AppiumPortTransformer.m */,
+			);
+			path = NSValueTransformers;
+			sourceTree = "<group>";
+		};
+		365CA3C016EFB9C400A6DBE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C79C757C1A6BBAF00030023D /* AppiumAndroidSettingsModel.h */,
+				C79C757D1A6BBAF00030023D /* AppiumAndroidSettingsModel.m */,
+				C79C757E1A6BBAF00030023D /* AppiumDeveloperSettingsModel.h */,
+				C79C757F1A6BBAF00030023D /* AppiumDeveloperSettingsModel.m */,
+				C79C75801A6BBAF00030023D /* AppiumGeneralSettingsModel.h */,
+				C79C75811A6BBAF00030023D /* AppiumGeneralSettingsModel.m */,
+				C79C75821A6BBAF00030023D /* AppiumiOSSettingsModel.h */,
+				C79C75831A6BBAF00030023D /* AppiumiOSSettingsModel.m */,
+				C79C75841A6BBAF00030023D /* AppiumModel.h */,
+				C79C75851A6BBAF00030023D /* AppiumModel.m */,
+				C79C75861A6BBAF00030023D /* AppiumRobotSettingsModel.h */,
+				C79C75871A6BBAF00030023D /* AppiumRobotSettingsModel.m */,
+				C79C75881A6BBAF00030023D /* AppiumServerArgument.h */,
+				C79C75891A6BBAF00030023D /* AppiumServerArgument.m */,
+			);
+			name = Model;
+			path = Server/Model;
+			sourceTree = "<group>";
+		};
+		3668304A184A5C9600C1A91D /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3668304D184A5CE600C1A91D /* SBJson */,
+				3668304E184A5CED00C1A91D /* SocketIO */,
+				3668304F184A5CF200C1A91D /* SocketRocket */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		3668304D184A5CE600C1A91D /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				36683050184A5DB500C1A91D /* SBJson.h */,
+				36683051184A5DB500C1A91D /* SBJsonParser.h */,
+				36683052184A5DB500C1A91D /* SBJsonParser.m */,
+				36683053184A5DB500C1A91D /* SBJsonStreamParser.h */,
+				36683054184A5DB500C1A91D /* SBJsonStreamParser.m */,
+				36683055184A5DB500C1A91D /* SBJsonStreamParserAccumulator.h */,
+				36683056184A5DB500C1A91D /* SBJsonStreamParserAccumulator.m */,
+				36683057184A5DB500C1A91D /* SBJsonStreamParserAdapter.h */,
+				36683058184A5DB500C1A91D /* SBJsonStreamParserAdapter.m */,
+				36683059184A5DB500C1A91D /* SBJsonStreamParserState.h */,
+				3668305A184A5DB500C1A91D /* SBJsonStreamParserState.m */,
+				3668305B184A5DB500C1A91D /* SBJsonStreamTokeniser.h */,
+				3668305C184A5DB500C1A91D /* SBJsonStreamTokeniser.m */,
+				3668305D184A5DB500C1A91D /* SBJsonStreamWriter.h */,
+				3668305E184A5DB500C1A91D /* SBJsonStreamWriter.m */,
+				3668305F184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.h */,
+				36683060184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.m */,
+				36683061184A5DB500C1A91D /* SBJsonStreamWriterState.h */,
+				36683062184A5DB500C1A91D /* SBJsonStreamWriterState.m */,
+				36683063184A5DB500C1A91D /* SBJsonWriter.h */,
+				36683064184A5DB500C1A91D /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+		3668304E184A5CED00C1A91D /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				3668306F184A5DC000C1A91D /* SocketIO.h */,
+				36683070184A5DC000C1A91D /* SocketIO.m */,
+				36683071184A5DC000C1A91D /* SocketIOJSONSerialization.h */,
+				36683072184A5DC000C1A91D /* SocketIOJSONSerialization.m */,
+				36683073184A5DC000C1A91D /* SocketIOPacket.h */,
+				36683074184A5DC000C1A91D /* SocketIOPacket.m */,
+				36683075184A5DC000C1A91D /* SocketIOTransport.h */,
+				36683076184A5DC000C1A91D /* SocketIOTransportWebsocket.h */,
+				36683077184A5DC000C1A91D /* SocketIOTransportWebsocket.m */,
+				36683078184A5DC000C1A91D /* SocketIOTransportXHR.h */,
+				36683079184A5DC000C1A91D /* SocketIOTransportXHR.m */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		3668304F184A5CF200C1A91D /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				3668308A184A5E6600C1A91D /* base64.c */,
+				3668307F184A5DCE00C1A91D /* base64.h */,
+				36683080184A5DCE00C1A91D /* NSData+SRB64Additions.h */,
+				36683081184A5DCE00C1A91D /* NSData+SRB64Additions.m */,
+				36683082184A5DCE00C1A91D /* SRWebSocket.h */,
+				36683083184A5DCE00C1A91D /* SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			sourceTree = "<group>";
+		};
+		368230D71715C72100FF113F /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				363236791713B2470088FFBC /* AppiumCodeMakerPlugin.h */,
+				36C4BDFC171C9D4C004FD4FA /* AppiumCodeMakerPlugin.m */,
+				36C4BDFE171CA5F4004FD4FA /* AppiumCodeMakerPlugins.h */,
+				362B5B631713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.h */,
+				362B5B641713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.m */,
+				36FF07AE171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.h */,
+				36FF07AF171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.m */,
+				7D6B509118F522C400E25292 /* AppiumCodeMakerNodePlugin.h */,
+				7D6B509218F522C400E25292 /* AppiumCodeMakerNodePlugin.m */,
+				36BBC4CC1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.h */,
+				36BBC4CD1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.m */,
+				3661735417172AB200E786DF /* AppiumCodeMakerPythonPlugin.h */,
+				3661735517172AB200E786DF /* AppiumCodeMakerPythonPlugin.m */,
+				36FF07B117174935009ED9E2 /* AppiumCodeMakerRubyPlugin.h */,
+				36FF07B217174935009ED9E2 /* AppiumCodeMakerRubyPlugin.m */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		3695CAB316E3FFCD003697A9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				365A2D8216E3DF48007BADF9 /* ANSIUtility.h */,
+				365A2D8316E3DF48007BADF9 /* ANSIUtility.m */,
+				365A2D8516E3E67B007BADF9 /* NodeInstance.h */,
+				365A2D8616E3E67B007BADF9 /* NodeInstance.m */,
+				C7E595F41A6C0A5300B951F9 /* NSImage+Rotated.h */,
+				C7E595F51A6C0A5300B951F9 /* NSImage+Rotated.m */,
+				36580CB017A4543A004C2D94 /* NSString+TrimLeadingWhitespace.h */,
+				36580CB117A4543A004C2D94 /* NSString+TrimLeadingWhitespace.m */,
+				365A2D7C16E3C847007BADF9 /* Utility.h */,
+				365A2D7D16E3C847007BADF9 /* Utility.m */,
+				36FF20D41900222400008A7D /* XMLReader.h */,
+				36FF20D51900222400008A7D /* XMLReader.m */,
+				36D66775191FC8CE0088C110 /* NSObject+Properties.h */,
+				36D66776191FC8CE0088C110 /* NSObject+Properties.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		36A7C8E717A48450007F15AB /* AppleScriptHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				36A7C8EA17A48466007F15AB /* Appium.h */,
+				36A7C8ED17A486EA007F15AB /* SystemEvents.h */,
+			);
+			name = AppleScriptHeaders;
+			sourceTree = "<group>";
+		};
+		36B90186190721F000AE40E8 /* PopOvers */ = {
+			isa = PBXGroup;
+			children = (
+				C79C75671A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.h */,
+				C79C75681A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.m */,
+				C79C75691A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.h */,
+				C79C756A1A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.m */,
+				C79C756B1A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.h */,
+				C79C756C1A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.m */,
+				C79C756D1A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.h */,
+				C79C756E1A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.m */,
+				C79C756F1A6BBAD10030023D /* AppiumMainWindowPopOverButton.h */,
+				C79C75701A6BBAD10030023D /* AppiumMainWindowPopOverButton.m */,
+				C79C75711A6BBAD10030023D /* AppiumMainWindowPopOverViewController.h */,
+				C79C75721A6BBAD10030023D /* AppiumMainWindowPopOverViewController.m */,
+				C79C75731A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.h */,
+				C79C75741A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.m */,
+			);
+			path = PopOvers;
+			sourceTree = "<group>";
+		};
+		36BF1D63171B432E00C2CF01 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				36919C89171616AD00AC2C63 /* AppiumCodeMakerAction.h */,
+				36919C8A171616AD00AC2C63 /* AppiumCodeMakerAction.m */,
+				36BF1D76171B55DE00C2CF01 /* AppiumCodeMakerActions.h */,
+				36BF1D6D171B4F5000C2CF01 /* AppiumCodeMakerActionAlertAccept.h */,
+				36BF1D6E171B4F5000C2CF01 /* AppiumCodeMakerActionAlertAccept.m */,
+				36BF1D6A171B4ED400C2CF01 /* AppiumCodeMakerActionAlertDismiss.h */,
+				36BF1D6B171B4ED400C2CF01 /* AppiumCodeMakerAlertDismiss.m */,
+				36BF1D73171B540000C2CF01 /* AppiumCodeMakerActionComment.h */,
+				36BF1D74171B540000C2CF01 /* AppiumCodeMakerActionComment.m */,
+				368DC850173725590030F656 /* AppiumCodeMakerActionExecuteScript.h */,
+				368DC8511737255A0030F656 /* AppiumCodeMakerActionExecuteScript.m */,
+				36ADA117172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.h */,
+				36ADA118172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.m */,
+				36BF1D67171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.h */,
+				36BF1D68171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.m */,
+				36FA922A174037FD00699A6B /* AppiumCodeMakerActionScrollTo.h */,
+				36FA922B174037FD00699A6B /* AppiumCodeMakerActionScrollTo.m */,
+				36BF83751738787E00FF4234 /* AppiumCodeMakerActionShake.h */,
+				36BF83761738787E00FF4234 /* AppiumCodeMakerActionShake.m */,
+				36BF1D70171B4FE500C2CF01 /* AppiumCodeMakerActionSwipe.h */,
+				36BF1D71171B4FE500C2CF01 /* AppiumCodeMakerActionSwipe.m */,
+				36BF1D64171B434C00C2CF01 /* AppiumCodeMakerActionTap.h */,
+				36BF1D65171B434C00C2CF01 /* AppiumCodeMakerActionTap.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		36CD44F016F0E1CE00194193 /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				3614B1721719F4C400A72D99 /* Recorder */,
+				3618718A1718879A0021D7F7 /* PopOvers */,
+				360BD91316F12B03000D3BEB /* AppiumInspector.h */,
+				360BD91416F12B03000D3BEB /* AppiumInspector.m */,
+				36A871C6170B980F005BFD15 /* AppiumInspectorScreenshotImageView.h */,
+				36A871C7170B980F005BFD15 /* AppiumInspectorScreenshotImageView.m */,
+				36CD44EB16F0D5C300194193 /* AppiumInspectorWindowController.h */,
+				36CD44EC16F0D5C300194193 /* AppiumInspectorWindowController.m */,
+				36CD44F416F0E22800194193 /* WebDriverElementNode.h */,
+				36CD44F516F0E22800194193 /* WebDriverElementNode.m */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		36CEB7BF16E3662E00B5B100 = {
+			isa = PBXGroup;
+			children = (
+				36CEB7D116E3662E00B5B100 /* Appium */,
+				36CEB7D216E3662E00B5B100 /* Supporting Files */,
+				3668304A184A5C9600C1A91D /* External */,
+				36CEB7EE16E3662E00B5B100 /* AppiumTests */,
+				36CEB7CA16E3662E00B5B100 /* Frameworks */,
+				36CEB7C916E3662E00B5B100 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		36CEB7C916E3662E00B5B100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36CEB7C816E3662E00B5B100 /* Appium.app */,
+				36CEB7E816E3662E00B5B100 /* AppiumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36CEB7CA16E3662E00B5B100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C2E4A421B5CDE62005D76FD /* MGSFragaria.framework */,
+				8C2E4A401B5CDDF7005D76FD /* Selenium.framework */,
+				36683088184A5DF300C1A91D /* Security.framework */,
+				36A7C8EB17A485C9007F15AB /* ScriptingBridge.framework */,
+				36CEB7CB16E3662E00B5B100 /* Cocoa.framework */,
+				3695E3C216FD08C800AD1544 /* QuartzCore.framework */,
+				36CEB7CD16E3662E00B5B100 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CEB7CD16E3662E00B5B100 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36CEB7CE16E3662E00B5B100 /* AppKit.framework */,
+				36CEB7CF16E3662E00B5B100 /* CoreData.framework */,
+				36CEB7D016E3662E00B5B100 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		36CEB7D116E3662E00B5B100 /* Appium */ = {
+			isa = PBXGroup;
+			children = (
+				3612E5F916E5B6820050CF0A /* AppleScript */,
+				3614B16E1719F3AC00A72D99 /* AutoUpdate */,
+				36CD44F016F0E1CE00194193 /* Inspector */,
+				3614B16F1719F3F400A72D99 /* MenuBar */,
+				3614B1711719F46200A72D99 /* Misc */,
+				3614B16D1719F35400A72D99 /* MainWindow */,
+				365CA3C016EFB9C400A6DBE8 /* Model */,
+				3614B1701719F43700A72D99 /* XIBs */,
+				C79C755F1A6BB9650030023D /* AppiumAppDelegate.h */,
+				C79C75601A6BB9650030023D /* AppiumAppDelegate.m */,
+				362DF1E4170F4350001CAD1D /* AppiumGlobals.h */,
+				C79C755E1A6BB9010030023D /* AppiumPreferencesFile.h */,
+			);
+			path = Appium;
+			sourceTree = "<group>";
+		};
+		36CEB7D216E3662E00B5B100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				364EED37191EDDB300AB4439 /* icons */,
+				36CEB7D316E3662E00B5B100 /* Appium-Info.plist */,
+				36CEB7D916E3662E00B5B100 /* Appium-Prefix.pch */,
+				36CEB7DA16E3662E00B5B100 /* Credits.rtf */,
+				36B2F18516E6379C008764E0 /* defaults.plist */,
+				36F1DE42191FE67300FC65AC /* logTextViewBg.png */,
+				36A765A516F01C7C002A7D6A /* appium.icns */,
+				36CEB7D416E3662E00B5B100 /* InfoPlist.strings */,
+				36CEB7D716E3662E00B5B100 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "Appium/Supporting Files";
+			sourceTree = "<group>";
+		};
+		36CEB7EE16E3662E00B5B100 /* AppiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				36A7C8E717A48450007F15AB /* AppleScriptHeaders */,
+				36CEB7F416E3662E00B5B100 /* AppiumTests.h */,
+				36CEB7F516E3662E00B5B100 /* AppiumTests.m */,
+				36CEB7EF16E3662E00B5B100 /* Supporting Files */,
+			);
+			path = AppiumTests;
+			sourceTree = "<group>";
+		};
+		36CEB7EF16E3662E00B5B100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36CEB7F016E3662E00B5B100 /* AppiumTests-Info.plist */,
+				36CEB7F116E3662E00B5B100 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C79097451A6AB1D9007621D0 /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				C7A23A391A6B1B77004CA025 /* PopOvers */,
+				36CD44ED16F0D5C300194193 /* AppiumInspectorWindow.xib */,
+				C7FE35661A6B80F900827EAF /* AppiumRecorderView.xib */,
+			);
+			name = Inspector;
+			path = XIBs/Inpsector;
+			sourceTree = "<group>";
+		};
+		C7A23A391A6B1B77004CA025 /* PopOvers */ = {
+			isa = PBXGroup;
+			children = (
+				C7A23A3E1A6B1BE7004CA025 /* PreciseTapPopOverView.xib */,
+				C7A23A401A6B2225004CA025 /* SwipePopOverView.xib */,
+			);
+			path = PopOvers;
+			sourceTree = "<group>";
+		};
+		C7D0D53E1A6A84DF00D3D883 /* Settings PopOvers */ = {
+			isa = PBXGroup;
+			children = (
+				C79097541A6AD3A4007621D0 /* AppiumAndroidSettingsPopOverView.xib */,
+				C790974A1A6ABF3B007621D0 /* AppiumDeveloperSettingsPopOverView.xib */,
+				C79097461A6AB2BF007621D0 /* AppiumGeneralSettingsPopOverView.xib */,
+				C790974F1A6AC3BE007621D0 /* AppiumiOSSettingsPopOverView.xib */,
+				C7D0D54A1A6A859C00D3D883 /* AppiumRobotSettingsPopOverView.xib */,
+			);
+			name = "Settings PopOvers";
+			path = "XIBs/Settings PopOvers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36CEB7C716E3662E00B5B100 /* Appium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CEB7F916E3662E00B5B100 /* Build configuration list for PBXNativeTarget "Appium" */;
+			buildPhases = (
+				36CEB7C416E3662E00B5B100 /* Sources */,
+				3631DD9216F4E4830087779D /* CopyFiles */,
+				36CEB7C516E3662E00B5B100 /* Frameworks */,
+				36CEB7C616E3662E00B5B100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Appium;
+			productName = Appium;
+			productReference = 36CEB7C816E3662E00B5B100 /* Appium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36CEB7E716E3662E00B5B100 /* AppiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CEB7FC16E3662E00B5B100 /* Build configuration list for PBXNativeTarget "AppiumTests" */;
+			buildPhases = (
+				36CEB7E316E3662E00B5B100 /* Sources */,
+				36CEB7E416E3662E00B5B100 /* Frameworks */,
+				36CEB7E516E3662E00B5B100 /* Resources */,
+				36CEB7E616E3662E00B5B100 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CEB7ED16E3662E00B5B100 /* PBXTargetDependency */,
+			);
+			name = AppiumTests;
+			productName = AppiumTests;
+			productReference = 36CEB7E816E3662E00B5B100 /* AppiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36CEB7C016E3662E00B5B100 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Appium;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Appium;
+			};
+			buildConfigurationList = 36CEB7C316E3662E00B5B100 /* Build configuration list for PBXProject "Appium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36CEB7BF16E3662E00B5B100;
+			productRefGroup = 36CEB7C916E3662E00B5B100 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36CEB7C716E3662E00B5B100 /* Appium */,
+				36CEB7E716E3662E00B5B100 /* AppiumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36CEB7C616E3662E00B5B100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CEB7D616E3662E00B5B100 /* InfoPlist.strings in Resources */,
+				C7615F681A6E6E8100557977 /* open.png in Resources */,
+				C7A23A411A6B2225004CA025 /* SwipePopOverView.xib in Resources */,
+				36CEB7DC16E3662E00B5B100 /* Credits.rtf in Resources */,
+				364EED47191EDF6C00AB4439 /* android.png in Resources */,
+				364EED49191EDF9100AB4439 /* apple.png in Resources */,
+				364EED4F191EDFFF00AB4439 /* inspector.png in Resources */,
+				C79097511A6AC3BE007621D0 /* AppiumiOSSettingsPopOverView.xib in Resources */,
+				C790974C1A6ABF3B007621D0 /* AppiumDeveloperSettingsPopOverView.xib in Resources */,
+				C79097561A6AD3A4007621D0 /* AppiumAndroidSettingsPopOverView.xib in Resources */,
+				364EED53191EE04A00AB4439 /* settings.png in Resources */,
+				C7D0D54C1A6A859C00D3D883 /* AppiumRobotSettingsPopOverView.xib in Resources */,
+				C7FFBA8D19F15CDE005B030F /* menubar-icon.png in Resources */,
+				C7FE35671A6B80F900827EAF /* AppiumRecorderView.xib in Resources */,
+				36CEB7E216E3662E00B5B100 /* MainMenu.xib in Resources */,
+				364EED55191EE07000AB4439 /* trash.png in Resources */,
+				36BA3A1D191EE417007FA51B /* doctor.png in Resources */,
+				3695CAB116E3FCAE003697A9 /* AppiumInstallationWindow.xib in Resources */,
+				36F1DE43191FE67300FC65AC /* logTextViewBg.png in Resources */,
+				36AA8D7016E40B28007472C1 /* AppiumMainWindow.xib in Resources */,
+				C79097471A6AB2BF007621D0 /* AppiumGeneralSettingsPopOverView.xib in Resources */,
+				3612E5F816E5B6520050CF0A /* appium.sdef in Resources */,
+				364EED59191EE27000AB4439 /* robot.png in Resources */,
+				36B2F18616E6379C008764E0 /* defaults.plist in Resources */,
+				36A765A616F01C7C002A7D6A /* appium.icns in Resources */,
+				36CD44EF16F0D5C300194193 /* AppiumInspectorWindow.xib in Resources */,
+				C7615F6E1A6E6E8700557977 /* save.png in Resources */,
+				36D17E2916F144E600DC5797 /* Upgrade.applescript in Resources */,
+				C7A23A3F1A6B1BE7004CA025 /* PreciseTapPopOverView.xib in Resources */,
+				364EED3B191EDE6F00AB4439 /* dev-settings.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CEB7E516E3662E00B5B100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CEB7F316E3662E00B5B100 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36CEB7E616E3662E00B5B100 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36CEB7C416E3662E00B5B100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36683084184A5DCE00C1A91D /* NSData+SRB64Additions.m in Sources */,
+				36CEB7D816E3662E00B5B100 /* main.m in Sources */,
+				C7E595F61A6C0A5300B951F9 /* NSImage+Rotated.m in Sources */,
+				C79C75771A6BBAD10030023D /* AppiumGeneralSettingsPopOverViewController.m in Sources */,
+				365A2D7E16E3C847007BADF9 /* Utility.m in Sources */,
+				365A2D8416E3DF48007BADF9 /* ANSIUtility.m in Sources */,
+				C79C758E1A6BBAF00030023D /* AppiumModel.m in Sources */,
+				365A2D8716E3E67B007BADF9 /* NodeInstance.m in Sources */,
+				36AA8D6F16E40B28007472C1 /* AppiumMainWindowController.m in Sources */,
+				3668306D184A5DB500C1A91D /* SBJsonStreamWriterState.m in Sources */,
+				C79C75611A6BB9650030023D /* AppiumAppDelegate.m in Sources */,
+				36683066184A5DB500C1A91D /* SBJsonStreamParser.m in Sources */,
+				3652B34416E4287600BDE3E4 /* AppiumLaunchButtonTextTransformer.m in Sources */,
+				3612E5FC16E5B69C0050CF0A /* NSApplication+AppleScript.m in Sources */,
+				36683067184A5DB500C1A91D /* SBJsonStreamParserAccumulator.m in Sources */,
+				36BA17BB16E81BF30041DD86 /* AppiumAppPathTransformer.m in Sources */,
+				365CA3C316EFDA8300A6DBE8 /* AppiumPortTransformer.m in Sources */,
+				7D6B509318F522C400E25292 /* AppiumCodeMakerNodePlugin.m in Sources */,
+				36CD44EE16F0D5C300194193 /* AppiumInspectorWindowController.m in Sources */,
+				36CD44F616F0E22800194193 /* WebDriverElementNode.m in Sources */,
+				C79C75751A6BBAD10030023D /* AppiumAndroidSettingsPopOverViewController.m in Sources */,
+				C79C759B1A6BBBA30030023D /* AppiumInstallationWindowController.m in Sources */,
+				C79C758A1A6BBAF00030023D /* AppiumAndroidSettingsModel.m in Sources */,
+				3668307D184A5DC000C1A91D /* SocketIOTransportWebsocket.m in Sources */,
+				C7CA57CC1A6DB65100CB37FC /* AppiumInspectorPreciseTapPopoverViewController.m in Sources */,
+				3668308B184A5E6600C1A91D /* base64.c in Sources */,
+				360BD91516F12B03000D3BEB /* AppiumInspector.m in Sources */,
+				369126DD1704DABD007FBB5E /* AppiumInspectorRefreshButtonTextTransformer.m in Sources */,
+				36A871C8170B980F005BFD15 /* AppiumInspectorScreenshotImageView.m in Sources */,
+				362B5B651713B35A00F1B344 /* AppiumCodeMakerCSharpPlugin.m in Sources */,
+				368230DA1715C73F00FF113F /* AppiumCodeMaker.m in Sources */,
+				7D3CB870198579DD004D3CA4 /* AppiumInspectorButtonImageTransformer.m in Sources */,
+				36919C8B171616AD00AC2C63 /* AppiumCodeMakerAction.m in Sources */,
+				3661735617172AB200E786DF /* AppiumCodeMakerPythonPlugin.m in Sources */,
+				36FF07AD171743AC009ED9E2 /* AppiumCodeMakerLocator.m in Sources */,
+				36FF07B0171747C4009ED9E2 /* AppiumCodeMakerJavaPlugin.m in Sources */,
+				C79C758B1A6BBAF00030023D /* AppiumDeveloperSettingsModel.m in Sources */,
+				C79C75761A6BBAD10030023D /* AppiumDeveloperSettingsPopOverViewController.m in Sources */,
+				36FF07B317174936009ED9E2 /* AppiumCodeMakerRubyPlugin.m in Sources */,
+				36FF20D61900222400008A7D /* XMLReader.m in Sources */,
+				C79C75901A6BBAF00030023D /* AppiumServerArgument.m in Sources */,
+				36683069184A5DB500C1A91D /* SBJsonStreamParserState.m in Sources */,
+				3668306A184A5DB500C1A91D /* SBJsonStreamTokeniser.m in Sources */,
+				36C9479C1719D0CB008DE83F /* AppiumRecorderViewController.m in Sources */,
+				36BF1D66171B434C00C2CF01 /* AppiumCodeMakerActionTap.m in Sources */,
+				3668306C184A5DB500C1A91D /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C7CA57CD1A6DB65100CB37FC /* AppiumInspectorSwipePopOverViewController.m in Sources */,
+				36BF1D69171B4C1000C2CF01 /* AppiumCodeMakerActionSendKeys.m in Sources */,
+				36BF1D6C171B4ED400C2CF01 /* AppiumCodeMakerAlertDismiss.m in Sources */,
+				36BF1D6F171B4F5100C2CF01 /* AppiumCodeMakerActionAlertAccept.m in Sources */,
+				36683065184A5DB500C1A91D /* SBJsonParser.m in Sources */,
+				36BF1D72171B4FE600C2CF01 /* AppiumCodeMakerActionSwipe.m in Sources */,
+				36BF1D75171B540100C2CF01 /* AppiumCodeMakerActionComment.m in Sources */,
+				C79C75961A6BBB770030023D /* AppiumMenuBarManager.m in Sources */,
+				C79C758C1A6BBAF00030023D /* AppiumGeneralSettingsModel.m in Sources */,
+				3668306B184A5DB500C1A91D /* SBJsonStreamWriter.m in Sources */,
+				C79C758D1A6BBAF00030023D /* AppiumiOSSettingsModel.m in Sources */,
+				C79C759C1A6BBBA30030023D /* AppiumUpdater.m in Sources */,
+				C79C758F1A6BBAF00030023D /* AppiumRobotSettingsModel.m in Sources */,
+				C79C757B1A6BBAD10030023D /* AppiumRobotSettingsPopOverViewController.m in Sources */,
+				C79C75791A6BBAD10030023D /* AppiumMainWindowPopOverButton.m in Sources */,
+				36C4BDFD171C9D4C004FD4FA /* AppiumCodeMakerPlugin.m in Sources */,
+				36ADA119172098FA00D4287B /* AppiumCodeMakerActionPreciseTap.m in Sources */,
+				368DC8521737255A0030F656 /* AppiumCodeMakerActionExecuteScript.m in Sources */,
+				3668307B184A5DC000C1A91D /* SocketIOJSONSerialization.m in Sources */,
+				C79C75781A6BBAD10030023D /* AppiumiOSSettingsPopOverViewController.m in Sources */,
+				36BBC4CE1737334C006A83D7 /* AppiumCodeMakerObjectiveCPlugin.m in Sources */,
+				36BF83771738787E00FF4234 /* AppiumCodeMakerActionShake.m in Sources */,
+				3668307E184A5DC000C1A91D /* SocketIOTransportXHR.m in Sources */,
+				3668307C184A5DC000C1A91D /* SocketIOPacket.m in Sources */,
+				36D66777191FC8CE0088C110 /* NSObject+Properties.m in Sources */,
+				3668307A184A5DC000C1A91D /* SocketIO.m in Sources */,
+				3668306E184A5DB500C1A91D /* SBJsonWriter.m in Sources */,
+				366DFB75173D552800B451A6 /* AppiumInspectorWindow+AppleScript.m in Sources */,
+				36683085184A5DCE00C1A91D /* SRWebSocket.m in Sources */,
+				36FA922C174037FD00699A6B /* AppiumCodeMakerActionScrollTo.m in Sources */,
+				C79C757A1A6BBAD10030023D /* AppiumMainWindowPopOverViewController.m in Sources */,
+				36580CB217A4543A004C2D94 /* NSString+TrimLeadingWhitespace.m in Sources */,
+				36683068184A5DB500C1A91D /* SBJsonStreamParserAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CEB7E316E3662E00B5B100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A7C8F117A487DC007F15AB /* AppiumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36CEB7ED16E3662E00B5B100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36CEB7C716E3662E00B5B100 /* Appium */;
+			targetProxy = 36CEB7EC16E3662E00B5B100 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36CEB7D416E3662E00B5B100 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CEB7D516E3662E00B5B100 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		36CEB7DA16E3662E00B5B100 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CEB7DB16E3662E00B5B100 /* en */,
+			);
+			name = Credits.rtf;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		36CEB7E016E3662E00B5B100 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CEB7E116E3662E00B5B100 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		36CEB7F116E3662E00B5B100 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CEB7F216E3662E00B5B100 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36CEB7F716E3662E00B5B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		36CEB7F816E3662E00B5B100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		36CEB7FA16E3662E00B5B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"/Volumes/MacintoshHD/Projects/Appium/selenium-objective-c-master/Selenium/build/Debug",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Appium/Appium-Prefix.pch";
+				INFOPLIST_FILE = "Appium/Appium-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		36CEB7FB16E3662E00B5B100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"/Volumes/MacintoshHD/Projects/Appium/selenium-objective-c-master/Selenium/build/Debug",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Appium/Appium-Prefix.pch";
+				INFOPLIST_FILE = "Appium/Appium-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		36CEB7FD16E3662E00B5B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Appium.app/Contents/MacOS/Appium";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Appium/Appium-Prefix.pch";
+				INFOPLIST_FILE = "AppiumTests/AppiumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		36CEB7FE16E3662E00B5B100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Appium.app/Contents/MacOS/Appium";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Appium/Appium-Prefix.pch";
+				INFOPLIST_FILE = "AppiumTests/AppiumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36CEB7C316E3662E00B5B100 /* Build configuration list for PBXProject "Appium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CEB7F716E3662E00B5B100 /* Debug */,
+				36CEB7F816E3662E00B5B100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CEB7F916E3662E00B5B100 /* Build configuration list for PBXNativeTarget "Appium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CEB7FA16E3662E00B5B100 /* Debug */,
+				36CEB7FB16E3662E00B5B100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CEB7FC16E3662E00B5B100 /* Build configuration list for PBXNativeTarget "AppiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CEB7FD16E3662E00B5B100 /* Debug */,
+				36CEB7FE16E3662E00B5B100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36CEB7C016E3662E00B5B100 /* Project object */;
+}

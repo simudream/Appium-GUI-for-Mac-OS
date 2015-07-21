@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Appium Terminology">
+	<suite name="Appium Suite" code="APMS" description="Appium application specific scripting facilities.">
+		<enumeration name="platform setting" code="tpfm">
+			<enumerator name="android" code="epad">
+				<cocoa string-value="android"/>
+			</enumerator>
+			<enumerator name="ios" code="epio">
+				<cocoa string-value="ios"/>
+			</enumerator>
+		</enumeration>
+		<enumeration name="orientation setting" code="tors">
+			<enumerator name="portrait" code="eopt" description="portrait orientation">
+				<cocoa string-value="Portrait"/>
+			</enumerator>
+			<enumerator name="landscape" code="eols" description="landscape orientation">
+				<cocoa string-value="Landscape"/>
+			</enumerator>
+		</enumeration>
+		<class name="application" code="capp" description="Appium application">
+			<cocoa class="NSApplication"/>
+			<property name="inspector window" code="apiw" type="inspector window controller" access="r">
+				<cocoa key="s_InspectorWindow"/>
+			</property>
+			<property name="android settings" code="apas" type="android settings model" access="r">
+				<cocoa key="s_Android"/>
+			</property>
+			<property name="developer settings" code="apds" type="developer settings model" access="r">
+				<cocoa key="s_Developer"/>
+			</property>
+			<property name="general settings" code="apgs" type="general settings model" access="r">
+				<cocoa key="s_General"/>
+			</property>
+			<property name="ios settings" code="apis" type="ios settings model" access="r">
+				<cocoa key="s_iOS"/>
+			</property>
+			<property name="log text" code="aplt" type="text" access="r">
+				<cocoa key="s_LogText"/>
+			</property>
+			<property name="robot settings" code="aprs" type="robot settings model" access="r">
+				<cocoa key="s_Robot"/>
+			</property>
+			<property name="is server running" code="ap01" type="boolean" access="r">
+				<cocoa key="s_IsServerRunning"/>
+			</property>
+			<property name="is server listening" code="as02" type="boolean" access="r">
+				<cocoa key="s_IsServerListening"/>
+			</property>
+			<property name="platform" code="aapm" type="text" access="r">
+				<cocoa key="s_Platform"/>
+			</property>
+			<responds-to command="add environment variable">
+				<cocoa method="s_AddEnvironmentVariable:"/>
+			</responds-to>
+			<responds-to command="clear environment variables">
+				<cocoa method="s_ClearEnvironmentVariables:"/>
+			</responds-to>
+			<responds-to command="clear log">
+				<cocoa method="s_ClearLog:"/>
+			</responds-to>
+			<responds-to command="start server">
+				<cocoa method="s_StartServer:"/>
+			</responds-to>
+			<responds-to command="stop server">
+				<cocoa method="s_StopServer:"/>
+			</responds-to>
+			<responds-to command="use platform">
+				<cocoa method="s_UsePlatform:"/>
+			</responds-to>
+			<responds-to command="reset preferences">
+				<cocoa method="s_ResetPreferences:"/>
+			</responds-to>
+		</class>
+		<class name="android settings model" code="caas" description="android Settings" plural="android settings models">
+			<cocoa class="AppiumAndroidSettingsModel"/>
+			<property name="activity" code="as01" type="text">
+				<cocoa key="activity"/>
+			</property>
+			<property name="android app path" code="as02" type="text">
+				<cocoa key="appPath"/>
+			</property>
+			<property name="automation name" code="as03" type="text">
+				<cocoa key="automationName"/>
+			</property>
+			<property name="avd" code="as04" type="text">
+				<cocoa key="avd"/>
+			</property>
+			<property name="avd arguments" code="as05" type="text">
+				<cocoa key="avdArguments"/>
+			</property>
+			<property name="bootstrap port" code="as06" type="number">
+				<cocoa key="bootstrapPort"/>
+			</property>
+			<property name="chromedriver port" code="as07" type="number">
+				<cocoa key="chromedriverPort"/>
+			</property>
+			<property name="coverage class" code="as08" type="text">
+				<cocoa key="coverageClass"/>
+			</property>
+			<property name="custom android sdk path" code="as09" type="text">
+				<cocoa key="customSDKPath"/>
+			</property>
+			<property name="android device name" code="as10" type="text">
+				<cocoa key="deviceName"/>
+			</property>
+			<property name="device ready timeout" code="as11" type="number">
+				<cocoa key="deviceReadyTimeout"/>
+			</property>
+			<property name="full android reset" code="as12" type="boolean">
+				<cocoa key="fullReset"/>
+			</property>
+			<property name="key alias" code="as13" type="text">
+				<cocoa key="keyAlias"/>
+			</property>
+			<property name="key password" code="as14" type="text">
+				<cocoa key="keyPassword"/>
+			</property>
+			<property name="keystore password" code="as15" type="text">
+				<cocoa key="keystorePassword"/>
+			</property>
+			<property name="keystore path" code="as16" type="text">
+				<cocoa key="keystorePath"/>
+			</property>
+			<property name="no android reset" code="as17" type="boolean">
+				<cocoa key="noReset"/>
+			</property>
+			<property name="package" code="as18" type="text">
+				<cocoa key="package"/>
+			</property>
+			<property name="android platform name" code="as19" type="text">
+				<cocoa key="platformName"/>
+			</property>
+			<property name="android platform version" code="as20" type="text">
+				<cocoa key="platformVersion"/>
+			</property>
+			<property name="selendroid port" code="as21" type="number">
+				<cocoa key="selendroidPort"/>
+			</property>
+			<property name="use activity" code="as22" type="boolean">
+				<cocoa key="useActivity"/>
+			</property>
+			<property name="use android app path" code="as23" type="boolean">
+				<cocoa key="useAppPath"/>
+			</property>
+			<property name="use avd" code="as24" type="boolean">
+				<cocoa key="useAVD"/>
+			</property>
+			<property name="use avd arguments" code="as25" type="boolean">
+				<cocoa key="useAVDArguments"/>
+			</property>
+			<property name="use bootstrap port" code="as26" type="boolean">
+				<cocoa key="useBootstrapPort"/>
+			</property>
+			<property name="use browser" code="as27" type="boolean">
+				<cocoa key="useBrowser"/>
+			</property>
+			<property name="use chromedriver port" code="as28" type="boolean">
+				<cocoa key="useChromedriverPort"/>
+			</property>
+			<property name="use coverage class" code="as29" type="boolean">
+				<cocoa key="useCoverageClass"/>
+			</property>
+			<property name="use custom android sdk path" code="as30" type="boolean">
+				<cocoa key="useCustomSDKPath"/>
+			</property>
+			<property name="use android device name" code="as31" type="boolean">
+				<cocoa key="useDeviceName"/>
+			</property>
+			<property name="use android device ready timeout" code="as32" type="boolean">
+				<cocoa key="useDeviceReadyTimeout"/>
+			</property>
+			<property name="use keystore" code="as33" type="boolean">
+				<cocoa key="useKeystore"/>
+			</property>
+			<property name="use package" code="as34" type="boolean">
+				<cocoa key="usePackage"/>
+			</property>
+			<property name="use selendroid port" code="as35" type="boolean">
+				<cocoa key="useSelendroidPort"/>
+			</property>
+			<property name="use wait activity" code="as36" type="boolean">
+				<cocoa key="useWaitActivity"/>
+			</property>
+			<property name="use wait package" code="as37" type="boolean">
+				<cocoa key="useWaitPackage"/>
+			</property>
+			<property name="wait activity" code="as38" type="text">
+				<cocoa key="waitActivity"/>
+			</property>
+			<property name="wait package" code="as39" type="text">
+				<cocoa key="waitPackage"/>
+			</property>
+			<property name="android language" code="as40" type="text">
+				<cocoa key="language"/>
+			</property>
+			<property name="android locale" code="as41" type="text">
+				<cocoa key="locale"/>
+			</property>
+			<property name="use android language" code="as42" type="boolean">
+				<cocoa key="useLanguage"/>
+			</property>
+			<property name="use android locale" code="as43" type="boolean">
+				<cocoa key="useLocale"/>
+			</property>
+			<property name="browser name" code="as44" type="text">
+				<cocoa key="browserName"/>
+			</property>
+			<property name="intent action" code="as45" type="text">
+				<cocoa key="intentAction"/>
+			</property>
+			<property name="intent category" code="as46" type="text">
+				<cocoa key="intentCategory"/>
+			</property>
+			<property name="intent flags" code="as47" type="text">
+				<cocoa key="intentFlags"/>
+			</property>
+			<property name="intent arguments" code="as48" type="text">
+				<cocoa key="intentArguments"/>
+			</property>
+			<property name="use intent action" code="as49" type="boolean">
+				<cocoa key="useIntentAction"/>
+			</property>
+			<property name="use intent category" code="as50" type="boolean">
+				<cocoa key="useIntentCategory"/>
+			</property>
+			<property name="use intent flags" code="as51" type="boolean">
+				<cocoa key="useIntentFlags"/>
+			</property>
+			<property name="use intent arguments" code="as52" type="boolean">
+				<cocoa key="useIntentArguments"/>
+			</property>
+			<property name="chromedriver executable path" code="as53" type="text">
+				<cocoa key="chromedriverExecutablePath"/>
+			</property>
+			<property name="dont stop app on reset" code="as54" type="boolean">
+				<cocoa key="dontStopAppOnReset"/>
+			</property>
+			<property name="use chromedriver executable path" code="as55" type="boolean">
+				<cocoa key="useChromedriverExecutablePath"/>
+			</property>
+		</class>
+		<class name="developer settings model" code="cdsm" description="develoepr settings" plural="develoepr settings models">
+			<cocoa class="AppiumDeveloperSettingsModel"/>
+			<property name="break on node application start" code="ds01" type="boolean">
+				<cocoa key="breakOnNodeApplicationStart"/>
+			</property>
+			<property name="custom flags" code="ds02" type="text">
+				<cocoa key="customFlags"/>
+			</property>
+			<property name="developer mode" code="ds03" type="boolean">
+				<cocoa key="developerMode"/>
+			</property>
+			<property name="external appium package path" code="ds04" type="text">
+				<cocoa key="externalAppiumPackagePath"/>
+			</property>
+			<property name="external nodejs binary" code="ds05" type="text">
+				<cocoa key="externalNodeJSBinaryPath"/>
+			</property>
+			<property name="nodejs debug port" code="ds06" type="number">
+				<cocoa key="nodeJSDebugPort"/>
+			</property>
+			<property name="use custom flags" code="ds07" type="boolean">
+				<cocoa key="useCustomFlags"/>
+			</property>
+			<property name="use external appium package path" code="ds08" type="boolean">
+				<cocoa key="useExternalAppiumPackage"/>
+			</property>
+			<property name="use external nodejs binary" code="ds09" type="boolean">
+				<cocoa key="useExternalNodeJSBinary"/>
+			</property>
+			<property name="use nodejs debugging" code="ds10" type="boolean">
+				<cocoa key="useNodeDebugging"/>
+			</property>
+		</class>
+		<class name="general settings model" code="cgsm" description="general settings" plural="general settings models">
+			<cocoa class="AppiumGeneralSettingsModel"/>
+			<property name="check for updates" code="gs01" type="boolean">
+				<cocoa key="checkForUpdates"/>
+			</property>
+			<property name="new command timeout" code="gs02" type="number">
+				<cocoa key="commandTimeout"/>
+			</property>
+			<property name="kill processes using server port" code="gs03" type="boolean">
+				<cocoa key="killProcessesUsingPort"/>
+			</property>
+			<property name="use log colors" code="gs04" type="boolean">
+				<cocoa key="logColors"/>
+			</property>
+			<property name="use log file" code="gs05" type="boolean">
+				<cocoa key="useLogFile"/>
+			</property>
+			<property name="use log timestamps" code="gs06" type="boolean">
+				<cocoa key="logTimestamps"/>
+			</property>
+			<property name="log file" code="gs07" type="text">
+				<cocoa key="logFile"/>
+			</property>
+			<property name="log webhook" code="gs08" type="text">
+				<cocoa key="logWebHook"/>
+			</property>
+			<property name="force scroll log" code="gs09" type="boolean">
+				<cocoa key="forceScrollLog"/>
+			</property>
+			<property name="override existing sessions" code="gs09" type="boolean">
+				<cocoa key="overrideExistingSessions"/>
+			</property>
+			<property name="prelaunch application" code="gs10" type="boolean">
+				<cocoa key="prelaunchApp"/>
+			</property>
+			<property name="selenium grid configuration file" code="gs11" type="text">
+				<cocoa key="seleniumGridConfigFile"/>
+			</property>
+			<property name="server address" code="gs12" type="text">
+				<cocoa key="serverAddress"/>
+			</property>
+			<property name="server port" code="gs13" type="number">
+				<cocoa key="serverPort"/>
+			</property>
+			<property name="use log webhook" code="gs14" type="boolean">
+				<cocoa key="useLogWebHook"/>
+			</property>
+			<property name="use new command timeout" code="gs15" type="boolean">
+				<cocoa key="useCommandTimeout"/>
+			</property>
+			<property name="use remote server" code="gs17" type="boolean">
+				<cocoa key="useRemoteServer"/>
+			</property>
+			<property name="use selenium grid configuration file" code="gs18" type="boolean">
+				<cocoa key="useSeleniumGridConfigFile"/>
+			</property>
+			<property name="use local timezone" code="gs19" type="boolean">
+				<cocoa key="useLocalTimezone"/>
+			</property>
+			<property name="use callback address" code="gs20" type="boolean">
+				<cocoa key="useCallbackAddress"/>
+			</property>
+			<property name="use callback port" code="gs21" type="boolean">
+				<cocoa key="useCallbackPort"/>
+			</property>
+			<property name="callback address" code="gs22" type="text">
+				<cocoa key="callbackAddress"/>
+			</property>
+			<property name="callback port" code="gs23" type="number">
+				<cocoa key="callbackPort"/>
+			</property>
+			<property name="maximum log length" code="gs24" type="number">
+				<cocoa key="maxLogLength"/>
+			</property>
+			<property name="bypass permissions checks" code="gs25" type="boolean">
+				<cocoa key="bypassPermissionsCheck"/>
+			</property>
+			<property name="log level" code="gs26" type="text">
+				<cocoa key="logLevel"/>
+			</property>
+			<property name="temp folder path" code="gs27" type="text">
+				<cocoa key="tempFolderPath"/>
+			</property>
+			<property name="use additional log spacing" code="gs28" type="boolean">
+				<cocoa key="useAdditionalLogSpacing"/>
+			</property>
+			<property name="use strict capabilities" code="gs29" type="boolean">
+				<cocoa key="useStrictCapabilities"/>
+			</property>
+			<property name="use temp folder path" code="gs30" type="boolean">
+				<cocoa key="useTempFolderPath"/>
+			</property>
+		</class>
+		<class name="inspector window controller" code="caiw" description="inspector window">
+			<cocoa class="AppiumInspectorWindowController"/>
+			<property name="details" code="aisd" description="details for the selected element" type="text" access="r">
+				<cocoa key="s_Details"/>
+			</property>
+		</class>
+		<class name="ios settings model" code="cais" description="iOS Settings" plural="ios settings models">
+			<cocoa class="AppiumiOSSettingsModel"/>
+			<property name="ios app path" code="is01" type="text">
+				<cocoa key="appPath"/>
+			</property>
+			<property name="authorized" code="is02" type="boolean" access="r">
+				<cocoa key="authorized"/>
+			</property>
+			<property name="backend retries" code="is03" type="number">
+				<cocoa key="backendRetries"/>
+			</property>
+			<property name="bundle id" code="is04" type="text">
+				<cocoa key="bundleID"/>
+			</property>
+			<property name="ios calendar format" code="is05" type="text">
+				<cocoa key="calendarFormat"/>
+			</property>
+			<property name="custom trace template path" code="is06" type="text">
+				<cocoa key="customTraceTemplatePath"/>
+			</property>
+			<property name="ios device name" code="is07" type="text">
+				<cocoa key="deviceName"/>
+			</property>
+			<property name="full ios reset" code="is08" type="boolean">
+				<cocoa key="fullReset"/>
+			</property>
+			<property name="keep keychains" code="is10" type="boolean">
+				<cocoa key="keepKeychains"/>
+			</property>
+			<property name="ios language" code="is11" type="text">
+				<cocoa key="language"/>
+			</property>
+			<property name="ios locale" code="is13" type="text">
+				<cocoa key="locale"/>
+			</property>
+			<property name="no ios reset" code="is14" type="boolean">
+				<cocoa key="noReset"/>
+			</property>
+			<property name="ios orientation" code="is16" type="text">
+				<cocoa key="orientation"/>
+			</property>
+			<property name="ios platform version" code="is17" type="text">
+				<cocoa key="platformVersion"/>
+			</property>
+			<property name="show simulator log" code="is18" type="boolean">
+				<cocoa key="showSimulatorLog"/>
+			</property>
+			<property name="udid" code="is19" type="text">
+				<cocoa key="udid"/>
+			</property>
+			<property name="use ios app path" code="is20" type="boolean">
+				<cocoa key="useAppPath"/>
+			</property>
+			<property name="use backend retries" code="is21" type="boolean">
+				<cocoa key="useBackendRetries"/>
+			</property>
+			<property name="use bundle id" code="is22" type="boolean">
+				<cocoa key="useBundleID"/>
+			</property>
+			<property name="use ios calendar format" code="is23" type="boolean">
+				<cocoa key="useCalendar"/>
+			</property>
+			<property name="use custom trace template path" code="is24" type="boolean">
+				<cocoa key="useCustomTraceTemplate"/>
+			</property>
+			<property name="use ios device name" code="is25" type="boolean">
+				<cocoa key="useDeviceName"/>
+			</property>
+			<property name="use ios language" code="is26" type="boolean">
+				<cocoa key="useLanguage"/>
+			</property>
+			<property name="use launch timeout" code="is27" type="boolean">
+				<cocoa key="useLaunchTimeout"/>
+			</property>
+			<property name="launch timeout" code="is12" type="number">
+				<cocoa key="launchTimeout"/>
+			</property>
+			<property name="use ios locale" code="is28" type="boolean">
+				<cocoa key="useLocale"/>
+			</property>
+			<property name="use mobile safari" code="is29" type="boolean">
+				<cocoa key="useMobileSafari"/>
+			</property>
+			<property name="use native instruments library" code="is30" type="boolean">
+				<cocoa key="useNativeInstrumentsLibrary"/>
+			</property>
+			<property name="use ios orientation" code="is31" type="boolean">
+				<cocoa key="useOrientation"/>
+			</property>
+			<property name="use udid" code="is32" type="boolean">
+				<cocoa key="useUDID"/>
+			</property>
+			<property name="xcode path" code="is33" type="text" access="r">
+				<cocoa key="xcodePath"/>
+			</property>
+			<property name="use trace directory" code="is34" type="boolean">
+				<cocoa key="useTraceDirectory"/>
+			</property>
+			<property name="trace directory" code="is35" type="text">
+				<cocoa key="traceDirectory"/>
+			</property>
+			<property name="isolate simulator device" code="is36" type="boolean">
+				<cocoa key="isolateSimDevice"/>
+			</property>
+			<property name="instruments binarypath" code="is37" type="text">
+				<cocoa key="instrumentsBinaryPath"/>
+			</property>
+			<property name="localizable strings directory" code="is38" type="text">
+				<cocoa key="localizableStringsDirectory"/>
+			</property>
+			<property name="show system log" code="is39" type="boolean">
+				<cocoa key="showSystemLog"/>
+			</property>
+			<property name="use instruments binary path" code="is40" type="boolean">
+				<cocoa key="useInstrumentsBinaryPath"/>
+			</property>
+			<property name="use localizable strings directory" code="is41" type="boolean">
+				<cocoa key="useLocalizableStringsDirectory"/>
+			</property>
+		</class>
+		<class name="robot settings model" code="crsm" description="robot settings" plural="robot settings model">
+			<cocoa class="AppiumRobotSettingsModel"/>
+			<property name="robot address" code="rs01" type="text">
+				<cocoa key="robotAddress"/>
+			</property>
+			<property name="robot port" code="rs02" type="number">
+				<cocoa key="robotPort"/>
+			</property>
+			<property name="use robot" code="rs03" type="boolean">
+				<cocoa key="useRobot"/>
+			</property>
+		</class>
+		<command name="add environment variable" code="appmaenv" description="adds an environment variable">
+			<direct-parameter description="variable and value seperated by an equals sign (e.g. key=value)" type="text"/>
+		</command>
+		<command name="clear environment variables" code="appmcenv" description="clears all environment variables"/>
+		<command name="clear log" code="aapmclog" description="clears the appium server log display"/>
+		<command name="start server" code="appmstas" description="starts the appium server">
+			<result description="true if the server was started" type="boolean"/>
+		</command>
+		<command name="stop server" code="appmstos" description="stops the appium server">
+			<result description="true if the server was stopped" type="boolean"/>
+		</command>
+		<command name="use platform" code="appmusep" description="sets the platform">
+			<direct-parameter description="platform to use" type="platform setting"/>
+		</command>
+		<command name="reset preferences" code="appmrstp" description="resets the preferences to their default values"/>
+	</suite>
+</dictionary>

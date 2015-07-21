@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6724"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppiumMainWindowController">
+            <connections>
+                <outlet property="_androidPrefsButton" destination="FEf-Ny-JLn" id="uWX-JO-5ON"/>
+                <outlet property="_androidPrefsWindowController" destination="Lnv-D6-UQb" id="tYv-6f-yK0"/>
+                <outlet property="_androidRadioButton" destination="EwA-Hk-UWU" id="HaS-TC-VFb"/>
+                <outlet property="_buttonBarView" destination="fCp-SW-qmt" id="vRH-lm-Ghu"/>
+                <outlet property="_developerPrefsWindowController" destination="8ME-c5-j9d" id="5Wd-Ev-0J6"/>
+                <outlet property="_generalPrefsWindowController" destination="Ug1-6P-qDs" id="EzG-RG-jQw"/>
+                <outlet property="_iOSPrefsButton" destination="JXs-kf-O2d" id="26K-Gg-MNC"/>
+                <outlet property="_iOSRadioButton" destination="1RP-HM-Fli" id="m5R-ZC-bhW"/>
+                <outlet property="_iosPrefsWindowController" destination="XEC-az-lQA" id="UPs-ng-0MF"/>
+                <outlet property="_robotPrefsWindowController" destination="Vql-EG-AP5" id="mBO-lF-CjD"/>
+                <outlet property="logTextView" destination="29" id="104"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <window title="Appium" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" frameAutosaveName="AppiumMainWindow" animationBehavior="default" id="1" userLabel="Appium Main Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="358" y="216" width="666" height="561"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <value key="minSize" type="size" width="666" height="502"/>
+            <view key="contentView" id="2" userLabel="Main View">
+                <rect key="frame" x="0.0" y="0.0" width="666" height="561"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="fCp-SW-qmt" userLabel="Button Bar View">
+                        <rect key="frame" x="20" y="484" width="626" height="72"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <button toolTip="Open Configuration" id="kIQ-H8-SSb" userLabel="Open Configuration Button">
+                                <rect key="frame" x="-2" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="open" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3at-pU-C3H">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <accessibility description="Open Configuration Button"/>
+                                <connections>
+                                    <action selector="openDocument:" target="-1" id="TPE-BQ-5iH"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Save Configuration" id="LCW-W9-YqQ" userLabel="Save Configuration Button">
+                                <rect key="frame" x="54" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="save" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QAs-Fb-ta6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <accessibility description="Save Configuration Button"/>
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="xi2-RS-DMv"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Inspector" id="1306" userLabel="Inspector Button">
+                                <rect key="frame" x="166" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="inspector" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1307">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <accessibility description="Inspector Button"/>
+                                <connections>
+                                    <action selector="displayInspector:" target="-2" id="1379"/>
+                                    <binding destination="-2" name="enabled" keyPath="self.inspectorIsLaunching" id="RT4-6j-e5z">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="image" keyPath="self.inspectorIsLaunching" id="klE-fc-sP8">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">AppiumInspectorButtonImageTransformer</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </button>
+                            <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="SJ8-Yv-vbi" userLabel="Inspector Spinner">
+                                <rect key="frame" x="184" y="41" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <binding destination="-2" name="animate" keyPath="self.inspectorIsLaunching" id="Egp-ug-nSA"/>
+                                    <binding destination="-2" name="hidden" keyPath="self.inspectorIsLaunching" id="Mu8-4Q-3Ey">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </progressIndicator>
+                            <button toolTip="Doctor" id="R6H-hG-Zs6" userLabel="Doctor Button">
+                                <rect key="frame" x="110" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="doctor" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pxc-gf-7en">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <accessibility description="Doctor Button"/>
+                                <connections>
+                                    <action selector="doctorButtonClicked:" target="-2" id="hyc-fO-4cT"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Android Settings" id="FEf-Ny-JLn" userLabel="Android Settings Button" customClass="AppiumMainWindowPopOverButton">
+                                <rect key="frame" x="268" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="android" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" id="GPI-PZ-IQE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility description="Android Button"/>
+                                <connections>
+                                    <action selector="toggle:" target="Lnv-D6-UQb" id="uGj-zC-F1q"/>
+                                    <outlet property="popoverController" destination="Lnv-D6-UQb" id="J1O-BF-Fdp"/>
+                                </connections>
+                            </button>
+                            <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="C1a-C2-R6z" userLabel="Android Radio Button Matrix">
+                                <rect key="frame" x="285" y="10" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <size key="cellSize" width="22" height="18"/>
+                                <size key="intercellSpacing" width="4" height="2"/>
+                                <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="kcv-M4-Q1P" userLabel="Radio Group">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <cells>
+                                    <column>
+                                        <buttonCell type="radio" imagePosition="left" alignment="left" state="on" tag="1" inset="2" id="EwA-Hk-UWU" userLabel="Android Radio Button">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="model.isAndroid" id="Rqd-zv-XCP"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </column>
+                                </cells>
+                            </matrix>
+                            <button toolTip="iOS Settings" id="JXs-kf-O2d" userLabel="iOS Settings Button" customClass="AppiumMainWindowPopOverButton">
+                                <rect key="frame" x="324" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="apple" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="eKK-2C-39P">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility description="iOS Button"/>
+                                <connections>
+                                    <action selector="toggle:" target="XEC-az-lQA" id="ba7-08-hdK"/>
+                                    <outlet property="popoverController" destination="XEC-az-lQA" id="o8j-Y3-0x0"/>
+                                </connections>
+                            </button>
+                            <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="6vk-Ne-wcI" userLabel="iOS RadioButton Matrix">
+                                <rect key="frame" x="341" y="10" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <size key="cellSize" width="22" height="18"/>
+                                <size key="intercellSpacing" width="4" height="2"/>
+                                <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="vGL-bi-2zB" userLabel="Radio Group">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <cells>
+                                    <column>
+                                        <buttonCell type="radio" imagePosition="left" alignment="left" tag="1" inset="2" id="1RP-HM-Fli" userLabel="iOS Radio Button">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="-2" name="value" keyPath="model.isAndroid" id="8Yr-DS-Cp7">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </buttonCell>
+                                    </column>
+                                </cells>
+                            </matrix>
+                            <button toolTip="General Settings" id="nTF-89-OOV" userLabel="General Settings Button" customClass="AppiumMainWindowPopOverButton">
+                                <rect key="frame" x="380" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="settings" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="pKj-N7-wu7">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility description="General Settings Button"/>
+                                <connections>
+                                    <action selector="toggle:" target="Ug1-6P-qDs" id="rdD-yU-JS0"/>
+                                    <outlet property="popoverController" destination="Ug1-6P-qDs" id="nFs-nc-yah"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Developer Settings" id="RLj-er-2g4" userLabel="Developer Settings Button" customClass="AppiumMainWindowPopOverButton">
+                                <rect key="frame" x="436" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="dev-settings" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="gsJ-aC-Tgs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility description="Developer Settings Button"/>
+                                <connections>
+                                    <action selector="toggle:" target="8ME-c5-j9d" id="aHo-57-8Yj"/>
+                                    <outlet property="popoverController" destination="8ME-c5-j9d" id="Ihe-YG-OGg"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Robot Settings" id="MPC-8q-i8X" userLabel="Robot Settings Button" customClass="AppiumMainWindowPopOverButton">
+                                <rect key="frame" x="492" y="28" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="robot" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="4rl-rw-UXu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility description="Robot Settings Button"/>
+                                <connections>
+                                    <action selector="toggle:" target="Vql-EG-AP5" id="IND-sU-of3"/>
+                                    <outlet property="popoverController" destination="Vql-EG-AP5" id="J7l-2g-KR9"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Launch" id="276" userLabel="Launch Button">
+                                <rect key="frame" x="548" y="28" width="80" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="bevel" title="Launch" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="277">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <accessibility description="Launch Button"/>
+                                <connections>
+                                    <action selector="launchButtonClicked:" target="-2" id="287"/>
+                                    <binding destination="-2" name="enabled" keyPath="model.general.useRemoteServer" id="kLm-kD-G5m">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="-2" name="title" keyPath="model.isServerRunning" id="1291">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">AppiumLaunchButtonTextTransformer</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </customView>
+                    <customView id="Mfx-lC-YwK" userLabel="Log Console View">
+                        <rect key="frame" x="20" y="65" width="626" height="425"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" findBarPosition="belowContent" id="iTK-ho-EFy" userLabel="Black Background Scroll View">
+                                <rect key="frame" x="0.0" y="-21" width="626" height="446"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <clipView key="contentView" copiesOnScroll="NO" id="p8l-xQ-25G">
+                                    <rect key="frame" x="0.0" y="0.0" width="626" height="446"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view id="mqd-H6-Exw">
+                                            <rect key="frame" x="0.0" y="0.0" width="626" height="446"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gbT-xg-Ble">
+                                    <rect key="frame" x="-100" y="-100" width="624" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hYq-L3-4aL">
+                                    <rect key="frame" x="-100" y="-100" width="16" height="444"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xWt-Vf-Hye" userLabel="Log Console Background">
+                                <rect key="frame" x="0.0" y="5" width="626" height="414"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logTextViewBg" id="xIb-O4-C2e"/>
+                            </imageView>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="5" userLabel="Log Console Text View">
+                                <rect key="frame" x="0.0" y="0.0" width="626" height="425"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="LtR-VR-wie">
+                                    <rect key="frame" x="1" y="1" width="624" height="423"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" spellingCorrection="YES" smartInsertDelete="YES" id="29">
+                                            <rect key="frame" x="0.0" y="0.0" width="624" height="423"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <size key="minSize" width="624" height="423"/>
+                                            <size key="maxSize" width="684" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="624" height="423"/>
+                                            <size key="maxSize" width="684" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="28">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="27">
+                                    <rect key="frame" x="609" y="1" width="16" height="423"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sBJ-AZ-FEr">
+                        <rect key="frame" x="17" y="16" width="573" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="zJ6-tp-aWc">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">"Use Remote Server" is enabled. Most Settings will be disabled. You can only use Inspector to connect to a remote Appium Server in this mode. </string>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="1" green="0.93249320644626998" blue="0.84438996100179775" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="hidden" keyPath="model.general.useRemoteServer" id="xK4-Mh-pQL">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <button toolTip="Clear Log" verticalHuggingPriority="750" id="158" userLabel="Clear Log Console Button">
+                        <rect key="frame" x="596" y="16" width="52" height="42"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="trash" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="159">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <accessibility description="Clear Log"/>
+                        <connections>
+                            <action selector="clearLog:" target="-2" id="163"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="333.5"/>
+        </window>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <userDefaultsController representsSharedInstance="YES" id="107"/>
+        <viewController nibName="AppiumAndroidSettingsPopOverView" id="Lnv-D6-UQb" userLabel="Android Settings Popover View Controller" customClass="AppiumAndroidSettingsPopOverViewController">
+            <connections>
+                <outlet property="popover" destination="Eul-Ig-Wy9" id="JlX-nb-C3d"/>
+            </connections>
+        </viewController>
+        <popover appearance="HUD" id="Eul-Ig-Wy9" userLabel="Android Settings PopOver">
+            <connections>
+                <outlet property="contentViewController" destination="Lnv-D6-UQb" id="5Wp-0u-ARu"/>
+                <outlet property="delegate" destination="Lnv-D6-UQb" id="uaC-7w-TJh"/>
+            </connections>
+        </popover>
+        <viewController nibName="AppiumDeveloperSettingsPopOverView" id="8ME-c5-j9d" userLabel="Developer Settings Popover View Controller" customClass="AppiumDeveloperSettingsPopOverViewController">
+            <connections>
+                <outlet property="popover" destination="W53-UL-n60" id="TQT-91-1KP"/>
+            </connections>
+        </viewController>
+        <popover appearance="HUD" id="W53-UL-n60" userLabel="Developer Settings PopOver">
+            <connections>
+                <outlet property="contentViewController" destination="8ME-c5-j9d" id="xJK-3b-eNN"/>
+                <outlet property="delegate" destination="8ME-c5-j9d" id="Mar-Uv-exe"/>
+            </connections>
+        </popover>
+        <viewController nibName="AppiumGeneralSettingsPopOverView" id="Ug1-6P-qDs" userLabel="General Settings Popover View Controller" customClass="AppiumGeneralSettingsPopOverViewController">
+            <connections>
+                <outlet property="popover" destination="lir-Zd-0T7" id="5Bc-hc-IA8"/>
+            </connections>
+        </viewController>
+        <popover appearance="HUD" id="lir-Zd-0T7" userLabel="General Settings PopOver">
+            <connections>
+                <outlet property="contentViewController" destination="Ug1-6P-qDs" id="2YA-Kb-45o"/>
+                <outlet property="delegate" destination="Ug1-6P-qDs" id="HYZ-LR-2gp"/>
+            </connections>
+        </popover>
+        <viewController nibName="AppiumiOSSettingsPopOverView" id="XEC-az-lQA" userLabel="iOS Settings Popover View Controller" customClass="AppiumiOSSettingsPopOverViewController">
+            <connections>
+                <outlet property="popover" destination="IDq-46-1H6" id="i5i-PF-in9"/>
+            </connections>
+        </viewController>
+        <popover appearance="HUD" id="IDq-46-1H6" userLabel="iOS Settings PopOver">
+            <connections>
+                <outlet property="contentViewController" destination="XEC-az-lQA" id="wNh-ee-bRc"/>
+                <outlet property="delegate" destination="XEC-az-lQA" id="TTI-FH-bLb"/>
+            </connections>
+        </popover>
+        <viewController nibName="AppiumRobotSettingsPopOverView" id="Vql-EG-AP5" userLabel="Robot Settings Popover View Controller" customClass="AppiumRobotSettingsPopOverViewController">
+            <connections>
+                <outlet property="popover" destination="err-NI-adp" id="Aj7-Mu-Omu"/>
+            </connections>
+        </viewController>
+        <popover appearance="HUD" id="err-NI-adp" userLabel="Robot Settings PopOver">
+            <connections>
+                <outlet property="contentViewController" destination="Vql-EG-AP5" id="McR-9q-aFY"/>
+                <outlet property="delegate" destination="Vql-EG-AP5" id="o7C-iZ-rnH"/>
+            </connections>
+        </popover>
+    </objects>
+    <resources>
+        <image name="android" width="137" height="137"/>
+        <image name="apple" width="137" height="137"/>
+        <image name="dev-settings" width="144" height="144"/>
+        <image name="doctor" width="20.803611755371094" height="20.803611755371094"/>
+        <image name="inspector" width="173" height="173"/>
+        <image name="logTextViewBg" width="584" height="142"/>
+        <image name="open" width="20.799968719482422" height="16"/>
+        <image name="robot" width="20.803611755371094" height="20.803611755371094"/>
+        <image name="save" width="20.803611755371094" height="20.803611755371094"/>
+        <image name="settings" width="155" height="155"/>
+        <image name="trash" width="144" height="144"/>
+    </resources>
+</document>
